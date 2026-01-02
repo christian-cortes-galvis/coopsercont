@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, ReporteController};
+use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, SearchController, ReporteController};
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/servicios/acueducto', fn () => view('servicios.acueducto'))->name('servicios.acueducto');
@@ -19,6 +19,8 @@ Route::get('/noticias/{news}', [NewsController::class, 'show'])->name('noticias.
 Route::get('/compromiso-ambiental', fn () => view('institucional.compromiso-ambiental'))->name('compromiso.ambiental');
 
 Route::get('/estructura-organica', fn () => view('institucional.estructura-organica'))->name('estructura.organica');
+
+Route::get('/buscar', [SearchController::class, 'index'])->name('buscar');
 
 Route::prefix('transparencia')->group(function () {
 	Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');

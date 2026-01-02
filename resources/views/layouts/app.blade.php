@@ -137,6 +137,11 @@
 							Atención al Ciudadano
 						</a>
 					</li>
+					<li class="nav-item">
+						<form action="{{ route('buscar') }}" method="GET" class="d-flex">
+							<input type="search" name="q" class="form-control form-control-sm me-2" placeholder="Buscar en el sitio…" value="{{ request('q') }}">
+						</form>
+					</li>
 				</ul>
 			</div>
 		</div>

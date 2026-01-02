@@ -11,7 +11,6 @@ class NewsSeeder extends Seeder
 	public function run()
 	{
 		$data = [
-
 			[
 				'titulo' => 'COOPSERCONT informa sobre el inicio del periodo de facturación',
 				'resumen' => 'Se informa a la comunidad el inicio del nuevo periodo de facturación de los servicios públicos.',
@@ -28,9 +27,7 @@ class NewsSeeder extends Seeder
 				',
 				'fecha_publicacion' => Carbon::parse('2025-01-10'),
 				'activo' => true,
-			],
-
-			[
+			], [
 				'titulo' => 'Campaña institucional de ahorro y uso eficiente del agua',
 				'resumen' => 'COOPSERCONT promueve prácticas responsables para el ahorro del agua potable.',
 				'contenido' => '
@@ -49,9 +46,7 @@ class NewsSeeder extends Seeder
 				',
 				'fecha_publicacion' => Carbon::parse('2025-01-18'),
 				'activo' => true,
-			],
-
-			[
+			], [
 				'titulo' => 'Recordatorio sobre horarios de recolección de residuos sólidos',
 				'resumen' => 'Se recuerda a la comunidad respetar los días y horarios establecidos para la recolección.',
 				'contenido' => '
@@ -67,9 +62,7 @@ class NewsSeeder extends Seeder
 				',
 				'fecha_publicacion' => Carbon::parse('2025-02-05'),
 				'activo' => true,
-			],
-
-			[
+			], [
 				'titulo' => 'Mantenimiento preventivo del sistema de alcantarillado',
 				'resumen' => 'COOPSERCONT adelanta labores de mantenimiento preventivo en la red de alcantarillado.',
 				'contenido' => '
@@ -85,9 +78,7 @@ class NewsSeeder extends Seeder
 				',
 				'fecha_publicacion' => Carbon::parse('2025-02-20'),
 				'activo' => true,
-			],
-
-			[
+			], [
 				'titulo' => 'Compromiso institucional con la transparencia y la atención al ciudadano',
 				'resumen' => 'COOPSERCONT reafirma su compromiso con la transparencia y la atención a la ciudadanía.',
 				'contenido' => '
@@ -105,7 +96,6 @@ class NewsSeeder extends Seeder
 				'fecha_publicacion' => Carbon::parse('2025-03-01'),
 				'activo' => true,
 			],
-
 		];
 
 		foreach ($data as $item) {

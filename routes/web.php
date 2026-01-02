@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{HomeController, ServiceController, NewsController, TarifaController, AvisoController, ReporteController};
+use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, ReporteController};
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/servicios', [ServiceController::class, 'index']);
 Route::get('/servicios/acueducto', fn () => view('servicios.acueducto'))->name('servicios.acueducto');
 Route::get('/servicios/alcantarillado', fn () => view('servicios.alcantarillado'))->name('servicios.alcantarillado');
 Route::get('/servicios/aseo', fn () => view('servicios.aseo'))->name('servicios.aseo');

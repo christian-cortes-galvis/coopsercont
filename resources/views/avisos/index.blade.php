@@ -1,7 +1,6 @@
 @extends('layouts.app')
-
-@section('title','Avisos y Campañas')
-
+@section('title', 'Avisos y Campañas')
+@section('meta_description', 'Consulta los avisos y campañas informativas oficiales de COOPSERCONT dirigidos a la comunidad de El Contadero.')
 @section('content')
     <div class="container avisos-pdf">
 

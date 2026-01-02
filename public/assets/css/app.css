@@ -40,7 +40,7 @@ a:hover {
    NAVBAR
    ========================================================= */
 .navbar-coopsercont {
-    background-color: var(--coop-azul) !important;
+    background-color: #0D4DA1;
     padding: 16px 0;
 }
 

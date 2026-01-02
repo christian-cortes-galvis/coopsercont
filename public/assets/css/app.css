@@ -1,0 +1,57 @@
+:root {
+	--primary: #0D6EFD;     /* Azul institucional */
+	--green:   #198754;
+	--orange:  #FD7E14;
+	--red:     #DC3545;
+}
+
+.bg-primary {
+	background-color: var(--primary) !important;
+}
+
+/* ==========================
+   TARIFAS ESTILO PDF
+   ========================== */
+
+.tarifas-pdf {
+    font-size: 14px;
+    color: #000;
+}
+
+.tarifa-servicio {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding: 6px 10px;
+    font-weight: bold;
+    background-color: #e6efff;
+    border: 1px solid #9db7e5;
+}
+
+.tarifa-subtitulo {
+    margin: 6px 0;
+    font-weight: 600;
+}
+
+.tarifa-table {
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.tarifa-table th {
+    background-color: #d9e6ff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #9db7e5;
+}
+
+.tarifa-table td {
+    border: 1px solid #cfd6e4;
+    vertical-align: middle;
+    padding: 4px 6px;
+}
+
+.tarifa-table td,
+.tarifa-table th {
+    white-space: nowrap;
+}

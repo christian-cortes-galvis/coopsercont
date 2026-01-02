@@ -6,29 +6,29 @@ use Illuminate\Database\Eloquent\Model;
 
 class Report extends Model
 {
-    protected $table = 'reports';
+	protected $table = 'reports';
 
-    protected $fillable = [
-        'nombre',
-        'documento',
-        'direccion',
-        'telefono',
-        'email',
-        'tipo_incidencia',
-        'descripcion',
-        'foto',
-        'estado',
-    ];
+	protected $fillable = [
+		'nombre',
+		'documento',
+		'direccion',
+		'telefono',
+		'email',
+		'tipo_incidencia',
+		'descripcion',
+		'foto',
+		'estado',
+	];
 
-    protected $casts = [
-        'created_at' => 'datetime',
-    ];
+	protected $casts = [
+		'created_at' => 'datetime',
+	];
 
-    /**
-     * Scope: pendientes
-     */
-    public function scopePendientes($query)
-    {
-        return $query->where('estado', 'pendiente');
-    }
+	/**
+	* Scope: pendientes
+	*/
+	public function scopePendientes($query)
+	{
+		return $query->where('estado', 'pendiente');
+	}
 }

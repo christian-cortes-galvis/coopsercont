@@ -17,7 +17,7 @@ return new class extends Migration
 			$table->string('titulo');
 			$table->text('descripcion');
 			$table->enum('tipo', ['aviso', 'campaña']);
-            $table->string('imagen')->nullable();
+			$table->string('imagen')->nullable();
 			$table->boolean('activo')->default(true);
 		});
 	}

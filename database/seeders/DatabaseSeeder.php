@@ -2,13 +2,17 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\Search\{
+	ServiciosSearchSeeder,
+	TransparenciaSearchSeeder,
+	InstitucionalSearchSeeder,
+	NoticiasSearchSeeder,
+	AvisosSearchSeeder
+};
 
 class DatabaseSeeder extends Seeder
 {
-	use WithoutModelEvents;
-
 	/**
 	* Seed the application's database.
 	*/
@@ -17,7 +21,14 @@ class DatabaseSeeder extends Seeder
 		$this->call([
 			TarifaSeeder::class,
 			AnnouncementSeeder::class,
-			NewsSeeder::class,
+			NewsSeeder::class
+		]);
+		$this->call([
+			ServiciosSearchSeeder::class,
+			TransparenciaSearchSeeder::class,
+			InstitucionalSearchSeeder::class,
+			NoticiasSearchSeeder::class,
+			AvisosSearchSeeder::class,
 		]);
 	}
 }

@@ -7,10 +7,10 @@ use Illuminate\Support\Carbon;
 
 class Tarifa extends Model
 {
-    protected $fillable = ['servicio', 'uso', 'estrato', 'activo'];
+	protected $fillable = ['servicio', 'uso', 'estrato', 'activo'];
 
-    public function detalles()
-    {
-        return $this->hasMany(TarifaDetalle::class);
-    }
+	public function detalles()
+	{
+		return $this->hasMany(TarifaDetalle::class);
+	}
 }

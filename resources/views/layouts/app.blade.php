@@ -7,11 +7,12 @@
 	<meta name="robots" content="index, follow">
 	<meta name="author" content="COOPSERCONT">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="@yield('title', 'COOPSERCONT')">
-    <meta property="og:description" content="@yield('meta_description')">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_CO">
+	<meta property="og:title" content="@yield('title', 'COOPSERCONT')">
+	<meta property="og:description" content="@yield('meta_description')">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_CO">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/svg" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32"/>
 	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +20,8 @@
 		<div class="container">
 			{{-- LOGOS --}}
 			<a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-				<img src="{{ asset('assets/img/logo-coopsercont.png') }}" alt="COOPSERCONT" class="logo-main me-2">
-				<img src="{{ asset('assets/img/logo-alcaldia.png') }}" alt="Alcaldía El Contadero" class="logo-secondary">
+				<img src="{{ asset('assets/img/logo-coopsercont.png') }}" alt="COOPSERCONT" class="logo-coopsercont me-2">
+				<img src="{{ asset('assets/img/logo-alcaldia.png') }}" alt="Alcaldía El Contadero" class="logo-alcaldia">
 			</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -116,31 +117,26 @@
 							</li>
 						</ul>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url('/tarifas') }}">
 							Tarifas
 						</a>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url('/avisos') }}">
 							Avisos y Campañas
 						</a>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url('/noticias') }}">
 							Noticias
 						</a>
 					</li>
-
 					<li class="nav-item">
 						<a class="nav-link" href="{{ url('/contacto') }}">
 							Atención al Ciudadano
 						</a>
 					</li>
-
 				</ul>
 			</div>
 		</div>

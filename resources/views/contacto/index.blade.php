@@ -9,12 +9,12 @@
 		<p class="text-center text-muted mb-5">
 			Canales oficiales de atención, contacto y servicios a la ciudadanía
 		</p>
-        <div class="my-4 text-center">
-            <img src="{{ asset('institucional/sede-oficina-central.jpg') }}" class="img-fluid rounded border img-sede" alt="Sede de la oficina central COOPSERCONT">
-            <small class="d-block text-muted mt-2">
-                SEDE DE LA OFICINA CENTRAL, CALLE 4 No. 4-12 BARRIO EL CENTRO
-            </small>
-        </div>
+		<div class="my-4 text-center">
+			<img src="{{ asset('institucional/sede-oficina-central.jpg') }}" class="img-fluid rounded border img-sede" alt="Sede de la oficina central COOPSERCONT">
+			<small class="d-block text-muted mt-2">
+				SEDE DE LA OFICINA CENTRAL, CALLE 4 No. 4-12 BARRIO EL CENTRO
+			</small>
+		</div>
 		<div class="row g-4">
 			{{-- INFORMACIÓN DE CONTACTO --}}
 			<div class="col-md-6">

@@ -11,16 +11,16 @@ return new class extends Migration
 	*/
 	public function up(): void
 	{
-        Schema::create('tarifa_detalles', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->foreignId('tarifa_id')->constrained()->cascadeOnDelete();
-            $table->string('componente'); // Básico | Complementario | Suntuario
-            $table->decimal('cargo_fijo', 12, 2)->default(0);
-            $table->decimal('consumo', 12, 2)->default(0);
-            $table->decimal('vertimiento', 12, 2)->default(0);
-            $table->boolean('activo')->default(true);
-        });
+		Schema::create('tarifa_detalles', function (Blueprint $table) {
+			$table->id();
+			$table->timestamps();
+			$table->foreignId('tarifa_id')->constrained()->cascadeOnDelete();
+			$table->string('componente'); // Básico | Complementario | Suntuario
+			$table->decimal('cargo_fijo', 12, 2)->default(0);
+			$table->decimal('consumo', 12, 2)->default(0);
+			$table->decimal('vertimiento', 12, 2)->default(0);
+			$table->boolean('activo')->default(true);
+		});
 	}
 
 	/**

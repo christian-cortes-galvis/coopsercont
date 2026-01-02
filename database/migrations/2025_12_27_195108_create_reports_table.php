@@ -23,7 +23,7 @@ return new class extends Migration
 			$table->text('descripcion');
 			$table->string('foto')->nullable();
 			$table->string('estado')->default('pendiente');
-            $table->boolean('activo')->default(true);
+			$table->boolean('activo')->default(true);
 		});
 	}
 

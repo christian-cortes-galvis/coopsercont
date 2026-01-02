@@ -11,14 +11,14 @@ return new class extends Migration
 	*/
 	public function up(): void
 	{
-        Schema::create('tarifas', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->string('servicio');   // Acueducto | Alcantarillado | Aseo
-            $table->string('uso');        // Residencial | Comercial | Industrial
-            $table->unsignedTinyInteger('estrato')->nullable();
-            $table->boolean('activo')->default(true);
-        });
+		Schema::create('tarifas', function (Blueprint $table) {
+			$table->id();
+			$table->timestamps();
+			$table->string('servicio');   // Acueducto | Alcantarillado | Aseo
+			$table->string('uso');        // Residencial | Comercial | Industrial
+			$table->unsignedTinyInteger('estrato')->nullable();
+			$table->boolean('activo')->default(true);
+		});
 	}
 
 	/**

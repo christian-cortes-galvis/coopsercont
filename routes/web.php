@@ -21,17 +21,17 @@ Route::get('/compromiso-ambiental', fn () => view('institucional.compromiso-ambi
 Route::get('/estructura-organica', fn () => view('institucional.estructura-organica'))->name('estructura.organica');
 
 Route::prefix('transparencia')->group(function () {
-    Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');
+	Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');
 
-    Route::get('/instrumentos', fn () => view('transparencia.instrumentos'));
-    Route::get('/tramites', fn () => view('transparencia.tramites'));
+	Route::get('/instrumentos', fn () => view('transparencia.instrumentos'));
+	Route::get('/tramites', fn () => view('transparencia.tramites'));
 
-    Route::get('/transparencia/presupuesto', fn () => view('transparencia.presupuesto'))->name('transparencia.presupuesto');
+	Route::get('/transparencia/presupuesto', fn () => view('transparencia.presupuesto'))->name('transparencia.presupuesto');
 
-    Route::get('/transparencia/contratacion', fn () => view('transparencia.contratacion.index'))->name('transparencia.contratacion');
-    Route::get('/contratacion/plan-anual', fn () => view('transparencia.contratacion.plan'));
-    Route::get('/contratacion/ejecucion', fn () => view('transparencia.contratacion.ejecucion'));
+	Route::get('/transparencia/contratacion', fn () => view('transparencia.contratacion.index'))->name('transparencia.contratacion');
+	Route::get('/contratacion/plan-anual', fn () => view('transparencia.contratacion.plan'));
+	Route::get('/contratacion/ejecucion', fn () => view('transparencia.contratacion.ejecucion'));
 
-    Route::get('/presupuesto', fn () => view('transparencia.presupuesto'));
-    Route::get('/normatividad', fn () => view('transparencia.normatividad'));
+	Route::get('/presupuesto', fn () => view('transparencia.presupuesto'));
+	Route::get('/normatividad', fn () => view('transparencia.normatividad'));
 });

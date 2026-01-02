@@ -1,383 +1,385 @@
 /* =========================================================
-   PALETA CORPORATIVA COOPSERCONT
-   ========================================================= */
+PALETA CORPORATIVA COOPSERCONT
+========================================================= */
 :root {
-    --coop-azul:    #0D4DA1;   /* Primario */
-    --coop-verde:   #1E9E6A;
-    --coop-naranja: #F28C28;
-    --coop-morado:  #6F42C1;
-    --coop-gris:    #6c757d;
-    --coop-gris-claro: #f4f6f9;
+	--coop-azul:    #0D4DA1;   /* Primario */
+	--coop-verde:   #1E9E6A;
+	--coop-naranja: #F28C28;
+	--coop-morado:  #6F42C1;
+	--coop-gris:    #6c757d;
+	--coop-gris-claro: #f4f6f9;
 }
 
 /* =========================================================
-   BASE GENERAL
-   ========================================================= */
+BASE GENERAL
+========================================================= */
 body {
-    font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    font-size: 15px;
-    color: #000;
-    background-color: #fff;
+	font-family: "Segoe UI", Roboto, Arial, sans-serif;
+	font-size: 15px;
+	color: #000;
+	background-color: #fff;
 }
 
 h1, h2, h3 {
-    color: var(--coop-azul);
+	color: var(--coop-azul);
 }
 
 h4, h5 {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 a {
-    color: var(--coop-azul);
+	color: var(--coop-azul);
 }
 
 a:hover {
-    color: #083a7a;
+	color: #083a7a;
 }
 
 /* =========================================================
-   NAVBAR
-   ========================================================= */
+NAVBAR
+========================================================= */
 .navbar-coopsercont {
-    background-color: #0D4DA1;
-    padding: 16px 0;
+	background-color: var(--coop-azul) !important;
+	padding: 16px 0;
 }
 
-.logo-main {
-    height: 70px;
+.logo-coopsercont {
+	height: 70px;
+	filter: grayscale(100%) brightness(1.4) contrast(1.1);
 }
 
-.logo-secondary {
-    height: 55px;
+.logo-alcaldia {
+	height: 55px;
+	filter: grayscale(100%) brightness(1.4) contrast(1.1);
 }
 
 @media (max-width: 991px) {
-    .logo-main {
-        height: 55px;
-    }
-    .logo-secondary {
-        height: 40px;
-    }
+	.logo-main {
+		height: 55px;
+	}
+	.logo-secondary {
+		height: 40px;
+	}
 }
 
 /* =========================================================
-   HOME
-   ========================================================= */
+HOME
+========================================================= */
 .home-hero {
-    padding: 60px 20px;
-    background: linear-gradient(
-        180deg,
-        #f4f8ff 0%,
-        #ffffff 100%
-    );
-    border-bottom: 1px solid #e3eaf5;
+	padding: 60px 20px;
+	background: linear-gradient(
+		180deg,
+		#f4f8ff 0%,
+		#ffffff 100%
+	);
+	border-bottom: 1px solid #e3eaf5;
 }
 
 /* =========================================================
-   CARDS GENERALES
-   ========================================================= */
+CARDS GENERALES
+========================================================= */
 .card {
-    border-radius: 6px;
-    border: 1px solid #e1e5ef;
-    transition: border-color 0.2s ease-in-out;
+	border-radius: 6px;
+	border: 1px solid #e1e5ef;
+	transition: border-color 0.2s ease-in-out;
 }
 
 .card:hover {
-    border-color: var(--coop-azul);
+	border-color: var(--coop-azul);
 }
 
 .card h5 {
-    color: var(--coop-azul);
+	color: var(--coop-azul);
 }
 
 /* =========================================================
-   SERVICIOS (DETALLE)
-   ========================================================= */
+SERVICIOS (DETALLE)
+========================================================= */
 .servicio-detalle {
-    font-size: 15px;
-    color: #000;
+	font-size: 15px;
+	color: #000;
 }
 
 .titulo-seccion {
-    font-weight: 600;
-    color: var(--coop-azul);
-    border-left: 5px solid var(--coop-azul);
-    padding-left: 10px;
-    margin-bottom: 10px;
+	font-weight: 600;
+	color: var(--coop-azul);
+	border-left: 5px solid var(--coop-azul);
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 /* =========================================================
-   TARIFAS (ESTILO PDF)
-   ========================================================= */
+TARIFAS (ESTILO PDF)
+========================================================= */
 .tarifas-pdf {
-    font-size: 14px;
-    color: #000;
+	font-size: 14px;
+	color: #000;
 }
 
 .tarifa-servicio {
-    margin-top: 2.5rem;
-    margin-bottom: 0.5rem;
-    padding: 6px 10px;
-    font-weight: bold;
-    background-color: #e6efff;
-    border: 1px solid #9db7e5;
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
+	padding: 6px 10px;
+	font-weight: bold;
+	background-color: #e6efff;
+	border: 1px solid #9db7e5;
 }
 
 .tarifa-subtitulo {
-    margin: 6px 0;
-    font-weight: 600;
+	margin: 6px 0;
+	font-weight: 600;
 }
 
 .tarifa-table {
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
+	border-collapse: collapse;
+	margin-bottom: 1.5rem;
 }
 
 .tarifa-table th {
-    background-color: #d9e6ff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-    border: 1px solid #9db7e5;
+	background-color: #d9e6ff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #9db7e5;
 }
 
 .tarifa-table td {
-    border: 1px solid #cfd6e4;
-    vertical-align: middle;
-    padding: 4px 6px;
+	border: 1px solid #cfd6e4;
+	vertical-align: middle;
+	padding: 4px 6px;
 }
 
 .tarifa-table td,
 .tarifa-table th {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 /* =========================================================
-   AVISOS Y CAMPAÑAS
-   ========================================================= */
+AVISOS Y CAMPAÑAS
+========================================================= */
 .avisos-pdf {
-    font-size: 14px;
-    color: #000;
+	font-size: 14px;
+	color: #000;
 }
 
 .aviso-tipo {
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 6px 10px;
-    font-weight: bold;
-    background-color: #e6efff;
-    border: 1px solid #9db7e5;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	padding: 6px 10px;
+	font-weight: bold;
+	background-color: #e6efff;
+	border: 1px solid #9db7e5;
 }
 
 .aviso-item {
-    border-left: 4px solid var(--coop-azul);
-    font-size: 14px;
+	border-left: 4px solid var(--coop-azul);
+	font-size: 14px;
 }
 
 .aviso-item p {
-    margin-top: 4px;
-    color: #333;
+	margin-top: 4px;
+	color: #333;
 }
 
 /* =========================================================
-   ALERTAS
-   ========================================================= */
+ALERTAS
+========================================================= */
 .alert-info {
-    background-color: #eef5ff;
-    border-color: var(--coop-azul);
-    color: #0b3d91;
+	background-color: #eef5ff;
+	border-color: var(--coop-azul);
+	color: #0b3d91;
 }
 
 /* =========================================================
-   BOTONES
-   ========================================================= */
+BOTONES
+========================================================= */
 .btn-primary {
-    background-color: var(--coop-azul);
-    border-color: var(--coop-azul);
+	background-color: var(--coop-azul);
+	border-color: var(--coop-azul);
 }
 
 .btn-primary:hover {
-    background-color: #083a7a;
-    border-color: #083a7a;
+	background-color: #083a7a;
+	border-color: #083a7a;
 }
 
 .btn-outline-primary {
-    color: var(--coop-azul);
-    border-color: var(--coop-azul);
+	color: var(--coop-azul);
+	border-color: var(--coop-azul);
 }
 
 .btn-outline-primary:hover {
-    background-color: var(--coop-azul);
-    color: #fff;
+	background-color: var(--coop-azul);
+	color: #fff;
 }
 
 /* =========================================================
-   FOOTER
-   ========================================================= */
+FOOTER
+========================================================= */
 footer {
-    background-color: #1f2d3d;
-    color: #eaeaea;
+	background-color: #1f2d3d;
+	color: #eaeaea;
 }
 
 footer small {
-    font-size: 13px;
+	font-size: 13px;
 }
 
 /* =========================================================
-   IMPRESIÓN
-   ========================================================= */
+IMPRESIÓN
+========================================================= */
 @media print {
-    .navbar,
-    footer,
-    .btn {
-        display: none !important;
-    }
+	.navbar,
+	footer,
+	.btn {
+		display: none !important;
+	}
 
-    body {
-        font-size: 13px;
-    }
+	body {
+		font-size: 13px;
+	}
 }
 
 /* ==========================
-   TARIFAS ESTILO PDF
-   ========================== */
+TARIFAS ESTILO PDF
+========================== */
 
 .tarifas-pdf {
-    font-size: 14px;
-    color: #000;
+	font-size: 14px;
+	color: #000;
 }
 
 .tarifa-servicio {
-    margin-top: 2.5rem;
-    margin-bottom: 0.5rem;
-    padding: 6px 10px;
-    font-weight: bold;
-    background-color: #e6efff;
-    border: 1px solid #9db7e5;
+	margin-top: 2.5rem;
+	margin-bottom: 0.5rem;
+	padding: 6px 10px;
+	font-weight: bold;
+	background-color: #e6efff;
+	border: 1px solid #9db7e5;
 }
 
 .tarifa-subtitulo {
-    margin: 6px 0;
-    font-weight: 600;
+	margin: 6px 0;
+	font-weight: 600;
 }
 
 .tarifa-table {
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
+	border-collapse: collapse;
+	margin-bottom: 1.5rem;
 }
 
 .tarifa-table th {
-    background-color: #d9e6ff;
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-    border: 1px solid #9db7e5;
+	background-color: #d9e6ff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #9db7e5;
 }
 
 .tarifa-table td {
-    border: 1px solid #cfd6e4;
-    vertical-align: middle;
-    padding: 4px 6px;
+	border: 1px solid #cfd6e4;
+	vertical-align: middle;
+	padding: 4px 6px;
 }
 
 .tarifa-table td,
 .tarifa-table th {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 /* =========================================================
-   AVISOS Y CAMPAÑAS
-   ========================================================= */
+AVISOS Y CAMPAÑAS
+========================================================= */
 
 .avisos-page {
-    font-size: 15px;
+	font-size: 15px;
 }
 
 /* TÍTULOS DE BLOQUE (AVISOS / CAMPAÑAS) */
 .bloque-titulo {
-    background-color: #e6efff;
-    border: 1px solid #9db7e5;
-    padding: 6px 12px;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+	background-color: #e6efff;
+	border: 1px solid #9db7e5;
+	padding: 6px 12px;
+	font-weight: bold;
+	margin-bottom: 1.5rem;
 }
 
 /* AVISOS DE TEXTO */
 .aviso-item-texto {
-    padding: 12px 0;
-    border-bottom: 1px solid #e1e5ef;
+	padding: 12px 0;
+	border-bottom: 1px solid #e1e5ef;
 }
 
 .aviso-item-texto:last-child {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 /* CAMPAÑAS */
 .campania-card {
-    border: 1px solid #e1e5ef;
-    border-radius: 6px;
-    overflow: hidden;
-    height: 100%;
-    background-color: #fff;
+	border: 1px solid #e1e5ef;
+	border-radius: 6px;
+	overflow: hidden;
+	height: 100%;
+	background-color: #fff;
 }
 
 .campania-img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    background-color: #f8f9fa;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	background-color: #f8f9fa;
 }
 
 .campania-body {
-    padding: 12px;
+	padding: 12px;
 }
 
 /* =========================================================
-   IMÁGENES INSTITUCIONALES
-   ========================================================= */
+IMÁGENES INSTITUCIONALES
+========================================================= */
 
 /* Planta de tratamiento / infraestructura */
 .img-infraestructura {
-    max-width: 900px;
-    width: 100%;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
+	max-width: 900px;
+	width: 100%;
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
 }
 
 /* Sede administrativa */
 .img-sede {
-    max-width: 700px;
-    width: 100%;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
+	max-width: 700px;
+	width: 100%;
+	border: 1px solid #dee2e6;
+	border-radius: 6px;
 }
 
 /* Ajuste móvil */
 @media (max-width: 576px) {
-    .img-infraestructura,
-    .img-sede {
-        max-width: 100%;
-    }
+	.img-infraestructura,
+	.img-sede {
+		max-width: 100%;
+	}
 }
 
 .transparencia h5 {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 .transparencia .card {
-    border: 1px solid #e1e5ef;
+	border: 1px solid #e1e5ef;
 }
 
 /* =========================================================
-   TRANSPARENCIA – ESTADO VACÍO
-   ========================================================= */
+TRANSPARENCIA – ESTADO VACÍO
+========================================================= */
 
 .transparencia-empty {
-    background-color: #f0f6ff;
-    border: 1px solid #9db7e5;
-    color: #0b3d91;
-    padding: 20px;
-    border-radius: 6px;
-    margin-top: 20px;
+	background-color: #f0f6ff;
+	border: 1px solid #9db7e5;
+	color: #0b3d91;
+	padding: 20px;
+	border-radius: 6px;
+	margin-top: 20px;
 }
 

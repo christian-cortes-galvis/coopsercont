@@ -1,12 +1,242 @@
+/* =========================================================
+   PALETA CORPORATIVA COOPSERCONT
+   ========================================================= */
 :root {
-	--primary: #0D6EFD;     /* Azul institucional */
-	--green:   #198754;
-	--orange:  #FD7E14;
-	--red:     #DC3545;
+    --coop-azul:    #0D4DA1;   /* Primario */
+    --coop-verde:   #1E9E6A;
+    --coop-naranja: #F28C28;
+    --coop-morado:  #6F42C1;
+    --coop-gris:    #6c757d;
+    --coop-gris-claro: #f4f6f9;
 }
 
-.bg-primary {
-	background-color: var(--primary) !important;
+/* =========================================================
+   BASE GENERAL
+   ========================================================= */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    color: var(--coop-azul);
+}
+
+h4, h5 {
+    font-weight: 600;
+}
+
+a {
+    color: var(--coop-azul);
+}
+
+a:hover {
+    color: #083a7a;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+.navbar-coopsercont {
+    background-color: var(--coop-azul) !important;
+    padding: 16px 0;
+}
+
+.logo-main {
+    height: 70px;
+}
+
+.logo-secondary {
+    height: 55px;
+}
+
+@media (max-width: 991px) {
+    .logo-main {
+        height: 55px;
+    }
+    .logo-secondary {
+        height: 40px;
+    }
+}
+
+/* =========================================================
+   HOME
+   ========================================================= */
+.home-hero {
+    padding: 60px 20px;
+    background: linear-gradient(
+        180deg,
+        #f4f8ff 0%,
+        #ffffff 100%
+    );
+    border-bottom: 1px solid #e3eaf5;
+}
+
+/* =========================================================
+   CARDS GENERALES
+   ========================================================= */
+.card {
+    border-radius: 6px;
+    border: 1px solid #e1e5ef;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.card:hover {
+    border-color: var(--coop-azul);
+}
+
+.card h5 {
+    color: var(--coop-azul);
+}
+
+/* =========================================================
+   SERVICIOS (DETALLE)
+   ========================================================= */
+.servicio-detalle {
+    font-size: 15px;
+    color: #000;
+}
+
+.titulo-seccion {
+    font-weight: 600;
+    color: var(--coop-azul);
+    border-left: 5px solid var(--coop-azul);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   TARIFAS (ESTILO PDF)
+   ========================================================= */
+.tarifas-pdf {
+    font-size: 14px;
+    color: #000;
+}
+
+.tarifa-servicio {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding: 6px 10px;
+    font-weight: bold;
+    background-color: #e6efff;
+    border: 1px solid #9db7e5;
+}
+
+.tarifa-subtitulo {
+    margin: 6px 0;
+    font-weight: 600;
+}
+
+.tarifa-table {
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.tarifa-table th {
+    background-color: #d9e6ff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #9db7e5;
+}
+
+.tarifa-table td {
+    border: 1px solid #cfd6e4;
+    vertical-align: middle;
+    padding: 4px 6px;
+}
+
+.tarifa-table td,
+.tarifa-table th {
+    white-space: nowrap;
+}
+
+/* =========================================================
+   AVISOS Y CAMPAÑAS
+   ========================================================= */
+.avisos-pdf {
+    font-size: 14px;
+    color: #000;
+}
+
+.aviso-tipo {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 6px 10px;
+    font-weight: bold;
+    background-color: #e6efff;
+    border: 1px solid #9db7e5;
+}
+
+.aviso-item {
+    border-left: 4px solid var(--coop-azul);
+    font-size: 14px;
+}
+
+.aviso-item p {
+    margin-top: 4px;
+    color: #333;
+}
+
+/* =========================================================
+   ALERTAS
+   ========================================================= */
+.alert-info {
+    background-color: #eef5ff;
+    border-color: var(--coop-azul);
+    color: #0b3d91;
+}
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+.btn-primary {
+    background-color: var(--coop-azul);
+    border-color: var(--coop-azul);
+}
+
+.btn-primary:hover {
+    background-color: #083a7a;
+    border-color: #083a7a;
+}
+
+.btn-outline-primary {
+    color: var(--coop-azul);
+    border-color: var(--coop-azul);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--coop-azul);
+    color: #fff;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    background-color: #1f2d3d;
+    color: #eaeaea;
+}
+
+footer small {
+    font-size: 13px;
+}
+
+/* =========================================================
+   IMPRESIÓN
+   ========================================================= */
+@media print {
+    .navbar,
+    footer,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 13px;
+    }
 }
 
 /* ==========================

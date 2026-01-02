@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             TarifaSeeder::class,
             AnnouncementSeeder::class,
+            NewsSeeder::class,
         ]);
     }
 }

@@ -16,10 +16,11 @@ return new class extends Migration
 			$table->timestamps();
 			$table->string('titulo');
 			$table->longText('contenido');
+			$table->text('keywords')->nullable();
 			$table->string('url');
 			$table->string('tipo'); // servicio, transparencia, institucional, aviso, noticia
 			$table->boolean('activo')->default(true);
-			$table->fullText(['titulo', 'contenido']);
+			$table->fullText(['titulo', 'contenido', 'keywords']);
 		});
 	}
 

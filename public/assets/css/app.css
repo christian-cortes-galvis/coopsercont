@@ -383,3 +383,8 @@ TRANSPARENCIA – ESTADO VACÍO
 	margin-top: 20px;
 }
 
+mark {
+    background-color: #ffe066;
+    padding: 2px 4px;
+    border-radius: 3px;
+}

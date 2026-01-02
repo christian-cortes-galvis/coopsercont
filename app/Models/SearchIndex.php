@@ -11,6 +11,7 @@ class SearchIndex extends Model
 	protected $fillable = [
 		'titulo',
 		'contenido',
+		'keywords',
 		'url',
 		'tipo',
 	];

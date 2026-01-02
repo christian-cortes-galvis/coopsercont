@@ -14,14 +14,17 @@ class IndexSearchSeeder extends Seeder
 			[
 				'titulo' => 'Avisos y Campañas Informativas',
 				'contenido' => '
-					aviso.
-					avisos.
-					campañas.
-					campañas informativas.
-					avisos institucionales.
-					información a la comunidad.
-					manejo de residuos.
-					ahorro de agua.
+					Información oficial dirigida a la comunidad sobre avisos
+					institucionales y campañas informativas relacionadas con
+					los servicios públicos, el manejo adecuado de residuos
+					sólidos y la promoción del uso eficiente y ahorro del agua.
+				',
+				'keywords' => '
+					aviso avisos
+					campaña campañas campañas informativas
+					información comunidad
+					residuos sólidos manejo de residuos
+					ahorro de agua uso eficiente del agua
 				',
 				'url' => '/avisos',
 				'tipo' => 'aviso',
@@ -30,61 +33,94 @@ class IndexSearchSeeder extends Seeder
 			[
 				'titulo' => 'Servicio de Acueducto',
 				'contenido' => '
-					Servicio público de acueducto.
-					Planta de tratamiento de agua potable.
-					Barrio Primero de Mayo.
-					Calidad del agua.
-					Infraestructura hidráulica.
+					Servicio público de acueducto prestado por COOPSERCONT,
+					que incluye la captación, tratamiento y distribución de
+					agua potable desde la planta de tratamiento ubicada en
+					el barrio Primero de Mayo, garantizando la calidad del agua.
+				',
+				'keywords' => '
+					acueducto agua potable
+					planta de tratamiento
+					calidad del agua
+					servicio público
 				',
 				'url' => '/servicios/acueducto',
 				'tipo' => 'servicio',
-			], [
+			],
+			[
 				'titulo' => 'Servicio de Alcantarillado',
 				'contenido' => '
-					Servicio público de alcantarillado.
-					Manejo de aguas residuales.
-					Red de alcantarillado.
-					Mantenimiento preventivo.
+					Servicio público de alcantarillado para el manejo adecuado
+					de las aguas residuales del municipio, mediante redes de
+					recolección y mantenimiento preventivo que protegen la salud
+					pública y el medio ambiente.
+				',
+				'keywords' => '
+					alcantarillado aguas residuales
+					redes de alcantarillado
+					saneamiento básico
 				',
 				'url' => '/servicios/alcantarillado',
 				'tipo' => 'servicio',
-			], [
+			],
+			[
 				'titulo' => 'Servicio de Aseo',
 				'contenido' => '
-					Recolección de residuos sólidos.
-					Manejo ambiental.
-					Limpieza urbana.
-					Servicio de aseo.
+					Servicio de aseo orientado a la recolección de residuos
+					sólidos, la limpieza urbana y el manejo ambiental
+					responsable, promoviendo un entorno limpio y ordenado.
+				',
+				'keywords' => '
+					aseo residuos sólidos
+					basura recolección
+					limpieza urbana
+					manejo ambiental
 				',
 				'url' => '/servicios/aseo',
 				'tipo' => 'servicio',
 			],
-
 			// ================= TRANSPARENCIA =================
 			[
 				'titulo' => 'Transparencia',
 				'contenido' => '
-					Transparencia institucional.
-					Acceso a la información pública.
-					Ley de transparencia.
+					Sección de transparencia institucional que garantiza el
+					acceso a la información pública, en cumplimiento de la ley
+					de transparencia y los principios de rendición de cuentas.
+				',
+				'keywords' => '
+					transparencia información pública
+					ley de transparencia
+					rendición de cuentas
 				',
 				'url' => '/transparencia',
 				'tipo' => 'transparencia',
-			], [
+			],
+			[
 				'titulo' => 'Contratación',
 				'contenido' => '
-					Información contractual.
-					Plan anual de adquisiciones.
-					Ejecución de contratos.
+					Información relacionada con los procesos de contratación,
+					el plan anual de adquisiciones y la ejecución de contratos
+					realizados por la entidad.
+				',
+				'keywords' => '
+					contratación contratos
+					plan anual de adquisiciones
+					procesos contractuales
 				',
 				'url' => '/transparencia/contratacion',
 				'tipo' => 'transparencia',
-			], [
+			],
+			[
 				'titulo' => 'Presupuesto',
 				'contenido' => '
-					Presupuesto institucional.
-					Estados financieros.
-					Ejecución presupuestal.
+					Información presupuestal de la entidad, incluyendo estados
+					financieros, ejecución presupuestal y uso de los recursos
+					públicos.
+				',
+				'keywords' => '
+					presupuesto estados financieros
+					ejecución presupuestal
+					recursos públicos
 				',
 				'url' => '/transparencia/presupuesto',
 				'tipo' => 'transparencia',
@@ -94,11 +130,14 @@ class IndexSearchSeeder extends Seeder
 			[
 				'titulo' => 'Atención al Ciudadano',
 				'contenido' => '
-					Servicios de atención a la ciudadanía.
-					Atención presencial.
-					Atención telefónica.
-					Correo electrónico.
-					PQRDS.
+					Servicios de atención a la ciudadanía que incluyen atención
+					presencial, telefónica, canales digitales y el sistema de
+					peticiones, quejas, reclamos, denuncias y sugerencias (PQRDS).
+				',
+				'keywords' => '
+					atención al ciudadano
+					pqrds quejas reclamos denuncias
+					atención presencial telefónica
 				',
 				'url' => '/contacto',
 				'tipo' => 'institucional',
@@ -106,10 +145,15 @@ class IndexSearchSeeder extends Seeder
 			[
 				'titulo' => 'Compromiso Ambiental',
 				'contenido' => '
-					Protección ambiental.
-					Uso eficiente del agua.
-					Manejo de residuos sólidos.
-					Educación ambiental.
+					Compromiso institucional con la protección del medio
+					ambiente, el uso eficiente del agua, el manejo adecuado de
+					residuos sólidos y la educación ambiental.
+				',
+				'keywords' => '
+					compromiso ambiental
+					medio ambiente
+					educación ambiental
+					residuos sólidos agua
 				',
 				'url' => '/compromiso-ambiental',
 				'tipo' => 'institucional',
@@ -117,10 +161,15 @@ class IndexSearchSeeder extends Seeder
 			[
 				'titulo' => 'Estructura Orgánica y Talento Humano',
 				'contenido' => '
-					Asamblea General.
-					Consejo de Administración.
-					Gerencia.
-					Talento humano.
+					Información sobre la estructura orgánica de la entidad,
+					conformada por la Asamblea General, el Consejo de
+					Administración, la Gerencia y el talento humano.
+				',
+				'keywords' => '
+					estructura orgánica
+					talento humano
+					asamblea general
+					consejo de administración
 				',
 				'url' => '/estructura-organica',
 				'tipo' => 'institucional',
@@ -128,20 +177,22 @@ class IndexSearchSeeder extends Seeder
 		];
 
 		foreach ($items as $item) {
-			SearchIndex::firstOrCreate(
-				['url' => $item['url']],
-				$item
-			);
+			SearchIndex::firstOrCreate( $item );
 		}
 
 		//Anuncios
-		Announcement::where('activo', true)->each(function ($aviso) {
+		News::where('activo', true)->each(function ($news) {
 			SearchIndex::firstOrCreate(
-				['url' => '/avisos'],
+				['url' => route('noticias.show', $news)],
 				[
-					'titulo' => $aviso->titulo,
-					'contenido' => $aviso->descripcion,
-					'tipo' => $aviso->tipo,
+					'titulo' => $news->titulo,
+					'contenido' => strip_tags($news->contenido),
+					'keywords' => '
+						noticia noticias
+						información institucional
+						comunidad
+					',
+					'tipo' => 'noticia',
 				]
 			);
 		});

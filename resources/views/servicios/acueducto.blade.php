@@ -3,15 +3,18 @@
 @section('meta_description', 'Servicio público de acueducto en El Contadero. Agua potable segura, continua y de calidad.')
 @section('content')
     <div class="container servicio-detalle">
-
         <h2 class="fw-bold mb-3 text-center">
             SERVICIO DE ACUEDUCTO
         </h2>
-
         <p class="text-center text-muted mb-4">
             Prestación del servicio público de acueducto en el municipio de El Contadero
         </p>
-
+        <div class="my-4 text-center">
+            <img src="{{ asset('institucional/planta-tratamiento-acueducto.jpg') }}" class="img-fluid rounded border img-infraestructura" alt="Planta de Tratamiento Acueducto - Barrio Primero de Mayo">
+            <small class="d-block text-muted mt-2">
+                PLANTA DE TRATAMIENTO ACUEDUCTO - BARRIO PRIMERO DE MAYO
+            </small>
+        </div>
         {{-- DESCRIPCIÓN --}}
         <section class="mb-4">
             <h5 class="titulo-seccion">Descripción del servicio</h5>

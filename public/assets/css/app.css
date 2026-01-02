@@ -285,3 +285,99 @@ footer small {
 .tarifa-table th {
     white-space: nowrap;
 }
+/* =========================================================
+   AVISOS Y CAMPAÑAS
+   ========================================================= */
+
+.avisos-page {
+    font-size: 15px;
+}
+
+/* TÍTULOS DE BLOQUE (AVISOS / CAMPAÑAS) */
+.bloque-titulo {
+    background-color: #e6efff;
+    border: 1px solid #9db7e5;
+    padding: 6px 12px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* AVISOS DE TEXTO */
+.aviso-item-texto {
+    padding: 12px 0;
+    border-bottom: 1px solid #e1e5ef;
+}
+
+.aviso-item-texto:last-child {
+    border-bottom: none;
+}
+
+/* CAMPAÑAS */
+.campania-card {
+    border: 1px solid #e1e5ef;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fff;
+}
+
+.campania-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+.campania-body {
+    padding: 12px;
+}
+
+/* =========================================================
+   IMÁGENES INSTITUCIONALES
+   ========================================================= */
+
+/* Planta de tratamiento / infraestructura */
+.img-infraestructura {
+    max-width: 900px;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+/* Sede administrativa */
+.img-sede {
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+}
+
+/* Ajuste móvil */
+@media (max-width: 576px) {
+    .img-infraestructura,
+    .img-sede {
+        max-width: 100%;
+    }
+}
+
+.transparencia h5 {
+    font-weight: 600;
+}
+
+.transparencia .card {
+    border: 1px solid #e1e5ef;
+}
+
+/* =========================================================
+   TRANSPARENCIA – ESTADO VACÍO
+   ========================================================= */
+
+.transparencia-empty {
+    background-color: #f0f6ff;
+    border: 1px solid #9db7e5;
+    color: #0b3d91;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+

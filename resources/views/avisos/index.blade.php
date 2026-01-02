@@ -1,40 +1,70 @@
 @extends('layouts.app')
-@section('title', 'Avisos y Campañas')
-@section('meta_description', 'Consulta los avisos y campañas informativas oficiales de COOPSERCONT dirigidos a la comunidad de El Contadero.')
+
+@section('title','Avisos y Campañas Informativas')
+@section('meta_description','Avisos y campañas informativas de COOPSERCONT dirigidas a la comunidad.')
+
 @section('content')
-    <div class="container avisos-pdf">
+<div class="container avisos-page">
 
-        <h2 class="text-center fw-bold mb-1">
-            AVISOS Y CAMPAÑAS INFORMATIVAS
-        </h2>
+    {{-- TÍTULO --}}
+    <h2 class="fw-bold text-center mb-1">
+        AVISOS Y CAMPAÑAS INFORMATIVAS
+    </h2>
 
-        <p class="text-center text-muted mb-4">
-            Información oficial dirigida a la comunidad
-        </p>
+    <p class="text-center text-muted mb-5">
+        Información oficial dirigida a la comunidad
+    </p>
 
-        @forelse ($avisos as $tipo => $items)
+    {{-- ================= AVISOS ================= --}}
+    <section class="mb-5">
 
-            {{-- ENCABEZADO POR TIPO --}}
-            <div class="aviso-tipo">
-                {{ $tipo === 'aviso' ? 'AVISOS' : 'CAMPAÑAS' }}
+        <div class="bloque-titulo">
+            AVISOS
+        </div>
+
+        @forelse($avisos['aviso'] ?? collect() as $aviso)
+            <div class="aviso-item-texto">
+                <h6 class="fw-bold mb-1">
+                    {{ $aviso->titulo }}
+                </h6>
+                <p class="mb-0">
+                    {{ $aviso->descripcion }}
+                </p>
             </div>
-
-            <ul class="list-group list-group-flush mb-4">
-                @foreach ($items as $aviso)
-                    <li class="list-group-item aviso-item">
-                        <strong>{{ $aviso->titulo }}</strong>
-                        <p class="mb-0">
-                            {{ $aviso->descripcion }}
-                        </p>
-                    </li>
-                @endforeach
-            </ul>
-
         @empty
-            <div class="alert alert-warning text-center">
-                No hay avisos publicados actualmente.
+            <div class="alert alert-info">
+                No hay avisos activos actualmente.
             </div>
         @endforelse
 
-    </div>
+    </section>
+
+    {{-- ================= CAMPAÑAS ================= --}}
+    <section class="mb-5">
+        <div class="bloque-titulo">
+            CAMPAÑAS
+        </div>
+        <div class="row g-4">
+            @forelse($avisos['campaña'] ?? collect() as $campaña)
+                <div class="col-md-6 col-lg-4">
+                    <div class="campania-card">
+                        @if($campaña->imagen)
+                            <img src="{{ asset($campaña->imagen) }}" class="img-fluid campania-img" alt="{{ $campaña->titulo }}">
+                        @endif
+                        <div class="campania-body">
+                            <h6 class="fw-bold mb-1">{{ $campaña->titulo }}</h6>
+                            <p class="mb-0">{{ $campaña->descripcion }}</p>
+                        </div>
+
+                    </div>
+                </div>
+            @empty
+                <div class="alert alert-info">
+                    No hay campañas publicadas actualmente.
+                </div>
+            @endforelse
+        </div>
+    </section>
+
+</div>
 @endsection

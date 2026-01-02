@@ -12,6 +12,7 @@ class Announcement extends Model
         'titulo',
         'descripcion',
         'tipo',
+        'imagen',
         'activo',
     ];
 

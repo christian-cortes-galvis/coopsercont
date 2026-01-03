@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Report;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Mail\ReportCreatedMail;
+use Illuminate\Support\Facades\Mail;
 
 class ReporteController extends Controller
 {
@@ -32,8 +34,9 @@ class ReporteController extends Controller
 
 		Report::create($data);
 
-		return redirect()
-			->back()
-			->with('success', 'Reporte enviado correctamente.');
+		// 📧 ENVIAR CORREO
+		Mail::to('reportes@coopsercont.com')->send(new ReportCreatedMail($data));
+
+		return back()->with('success', 'Reporte enviado correctamente.');
 	}
 }

@@ -39,19 +39,12 @@ a:hover {
 /* =========================================================
 NAVBAR
 ========================================================= */
-.navbar-coopsercont {
-	background-color: var(--coop-azul) !important;
-	padding: 16px 0;
-}
-
 .logo-coopsercont {
 	height: 70px;
-	filter: grayscale(100%) brightness(1.4) contrast(1.1);
 }
 
 .logo-alcaldia {
 	height: 55px;
-	filter: grayscale(100%) brightness(1.4) contrast(1.1);
 }
 
 @media (max-width: 991px) {
@@ -387,4 +380,26 @@ mark {
 	background-color: #ffe066;
 	padding: 2px 4px;
 	border-radius: 3px;
+}
+
+/* =========================================================
+TEXTOS
+========================================================= */
+.text-azul {
+	color: var(--coop-azul);
+}
+.text-verde {
+	color: var(--coop-verde);
+}
+.text-naranja {
+	color: var(--coop-naranja);
+}
+.text-morado {
+	color: var(--coop-morado);
+}
+.text-gris {
+	color: var(--coop-gris);
+}
+.text-gris-claro {
+	color: var(--coop-gris-claro);
 }

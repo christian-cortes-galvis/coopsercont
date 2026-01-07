@@ -3,15 +3,34 @@
 @section('meta_description', 'COOPSERCONT presta los servicios públicos de acueducto, alcantarillado y aseo en el municipio de El Contadero.')
 @section('content')
 	<div class="container">
+		<section>
+			<div id="sliderInicial" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="{{ asset('assets/banner/1.jpeg') }}" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="{{ asset('assets/banner/2.jpeg') }}" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#sliderInicial" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Atrás</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#sliderInicial" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Adelante</span>
+				</button>
+			</div>
+		</section>
 		{{-- HERO --}}
 		<section class="home-hero text-center mb-5">
-			<h1 class="fw-bold text-primary">COOPSERCONT</h1>
-			<h4 class="mt-2">
+			<h1 class="fw-bold text-azul">COOPSERCONT</h1>
+			<h4 class="mt-2 text-naranja">
 				Comprometidos con el bienestar y el servicio del Contadero
 			</h4>
 			<p class="text-muted mt-3">
-				Administración Pública Cooperativa del Contadero - Transparencia y servicio
-				para la comunidad
+				Administración Pública Cooperativa del Contadero - Transparencia y servicio para la comunidad
 			</p>
 		</section>
 		{{-- SERVICIOS --}}
@@ -128,3 +147,12 @@
 		</section>
 	</div>
 @endsection
+@push('scripts')
+ <script type="">
+	const sliderInicial = document.querySelector('#sliderInicial')
+	const carousel = new bootstrap.Carousel(sliderInicial, {
+		interval: 2000,
+		touch: false
+	})
+ </script>
+@endpush

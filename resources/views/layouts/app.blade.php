@@ -16,7 +16,7 @@
 	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-coopsercont">
+	<nav class="navbar navbar-expand-lg navbar-coopsercont">
 		<div class="container">
 			{{-- LOGOS --}}
 			<a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
@@ -33,107 +33,90 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url('/') }}">Inicio</a>
+						<a class="nav-link text-azul" href="{{ url('/') }}">Inicio</a>
 					</li>
 
 					{{-- TRANSPARENCIA --}}
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="transparenciaDropdown" role="button"
-							data-bs-toggle="dropdown">
+						<a class="nav-link text-azul dropdown-toggle" href="#" id="transparenciaDropdown" role="button" data-bs-toggle="dropdown">
 							Transparencia
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
-
 							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/instrumentos') }}">
-									Instrumentos de gestión
-								</a>
-							</li>
-
-							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/tramites') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/tramites') }}">
 									Trámites y servicios
 								</a>
 							</li>
-
+							<li>
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/presupuesto') }}">
+									Presupuesto y estados financieros
+								</a>
+							</li>
+							<li>
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/normatividad') }}">
+									Normatividad
+								</a>
+							</li>
 							<li>
 								<hr class="dropdown-divider">
 							</li>
-
 							<li class="dropdown-header">
 								Contratación
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/contratacion/plan-anual') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/contratacion/plan-anual') }}">
 									Plan anual de adquisiciones
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/contratacion/ejecucion') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/contratacion/ejecucion') }}">
 									Ejecución de contratos
 								</a>
 							</li>
-
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-
-							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/presupuesto') }}">
-									Presupuesto y estados financieros
-								</a>
-							</li>
-
-							<li>
-								<a class="dropdown-item" href="{{ url('/transparencia/normatividad') }}">
-									Normatividad
-								</a>
-							</li>
-
 						</ul>
 					</li>
 
 					{{-- SERVICIOS --}}
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button"
+						<a class="nav-link text-azul dropdown-toggle" href="#" id="serviciosDropdown" role="button"
 							data-bs-toggle="dropdown">
 							Servicios Públicos
 						</a>
 						<ul class="dropdown-menu dropdown-menu-end">
 							<li>
-								<a class="dropdown-item" href="{{ url('/servicios/acueducto') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/servicios/acueducto') }}">
 									Acueducto
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ url('/servicios/alcantarillado') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/servicios/alcantarillado') }}">
 									Alcantarillado
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ url('/servicios/aseo') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/servicios/aseo') }}">
 									Aseo
 								</a>
 							</li>
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url('/tarifas') }}">
+						<a class="nav-link text-azul" href="{{ url('/tarifas') }}">
 							Tarifas
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url('/avisos') }}">
+						<a class="nav-link text-azul" href="{{ url('/avisos') }}">
 							Avisos y Campañas
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url('/noticias') }}">
+						<a class="nav-link text-azul" href="{{ url('/noticias') }}">
 							Noticias
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="{{ url('/contacto') }}">
+						<a class="nav-link text-azul" href="{{ url('/contacto') }}">
 							Atención al Ciudadano
 						</a>
 					</li>

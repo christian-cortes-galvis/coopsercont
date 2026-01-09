@@ -109,7 +109,7 @@
 
 				{{-- Botón --}}
 				<div class="col-12 text-end">
-					<button class="btn btn-primary px-4">
+					<button class="btn btn-azul px-4">
 						<i class="fas fa-save"></i> Enviar Reporte
 					</button>
 				</div>

@@ -23,12 +23,4 @@ class Report extends Model
 	protected $casts = [
 		'created_at' => 'datetime',
 	];
-
-	/**
-	* Scope: pendientes
-	*/
-	public function scopePendientes($query)
-	{
-		return $query->where('estado', 'pendiente');
-	}
 }

@@ -9,7 +9,7 @@ Route::get('/servicios/alcantarillado', fn () => view('servicios.alcantarillado'
 Route::get('/servicios/aseo', fn () => view('servicios.aseo'))->name('servicios.aseo');
 Route::get('/tarifas', [TarifaController::class, 'index']);
 Route::get('/avisos', [AvisoController::class, 'index']);
-Route::get('/reporte', [ReporteController::class, 'index']);
+Route::get('/reporte', fn () => view('reportes.index'))->name('reporte.index');
 Route::post('/crearReporte', [ReporteController::class, 'create'])->name('crearReporte');
 Route::get('/contacto', fn () => view('contacto.index'))->name('contacto');
 

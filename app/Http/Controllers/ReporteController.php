@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\Mail;
 
 class ReporteController extends Controller
 {
-	public function index()
-	{
-		return view('reportes.create');
-	}
-
 	public function create(Request $request)
 	{
 		$data = $request->validate([

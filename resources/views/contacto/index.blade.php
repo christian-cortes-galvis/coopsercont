@@ -2,8 +2,8 @@
 @section('title', 'Atención al Ciudadano')
 @section('meta_description', 'Canales oficiales de atención, contacto y servicios a la ciudadanía de COOPSERCONT en El Contadero.')
 @section('content')
-	<div class="container">
-		<h2 class="fw-bold text-center mb-3">
+	<div class="container seccion-detalle">
+		<h2 class="fw-bold mb-3 text-center text-azul">
 			ATENCIÓN AL CIUDADANO
 		</h2>
 		<p class="text-center text-muted mb-5">

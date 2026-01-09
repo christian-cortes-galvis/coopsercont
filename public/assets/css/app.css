@@ -2,12 +2,14 @@
 PALETA CORPORATIVA COOPSERCONT
 ========================================================= */
 :root {
-	--coop-azul:    #0D4DA1;   /* Primario */
-	--coop-verde:   #1E9E6A;
-	--coop-naranja: #F28C28;
-	--coop-morado:  #6F42C1;
-	--coop-gris:    #6c757d;
-	--coop-gris-claro: #f4f6f9;
+	--color-azul: #0d3b8e;
+	--color-amarillo: #f5b700;
+	--color-verde: #2e8b57;
+	--color-fucsia: #c2185b;
+
+	--color-fondo: #f8f9fa;
+	--color-muted: #6c757d;
+	--color-texto: #212529;
 }
 
 /* =========================================================
@@ -16,90 +18,537 @@ BASE GENERAL
 body {
 	font-family: "Segoe UI", Roboto, Arial, sans-serif;
 	font-size: 15px;
-	color: #000;
+	color: var(--color-texto);
 	background-color: #fff;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: var(--coop-azul);
 }
 
-h4, h5 {
+h4,
+h5 {
 	font-weight: 600;
 }
 
 a {
-	color: var(--coop-azul);
+	color: var(--color-azul);
+	text-decoration: none;
 }
 
 a:hover {
-	color: #083a7a;
+	color: var(--color-fucsia);
+}
+
+section {
+	padding: 3rem 0;
 }
 
 /* =========================================================
 NAVBAR
 ========================================================= */
-.logo-coopsercont {
-	height: 70px;
+.navbar {
+	background-color: #fff;
+	border-bottom: 4px solid var(--color-azul);
 }
 
-.logo-alcaldia {
-	height: 55px;
+.navbar-nav .nav-link {
+	color: var(--color-azul);
+	font-weight: 600;
 }
 
-@media (max-width: 991px) {
-	.logo-main {
-		height: 55px;
+.navbar-nav .nav-link:hover {
+	color: var(--color-fucsia);
+}
+
+/* =========================================================
+BANNER / OWL
+========================================================= */
+.banner-item {
+	position: relative;
+	width: 100%;
+}
+
+.banner-item img {
+	width: 100%;
+	display: block;
+}
+
+.banner-caption {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	padding: .75rem 1.25rem;
+	border-radius: .5rem;
+	z-index: 5;
+	max-width: 80%;
+	background-color: rgba(13, 59, 142, 0.75);
+	border-left: 5px solid var(--color-amarillo);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+}
+
+.banner-caption h2 {
+	color: var(--color-amarillo);
+	font-weight: 700;
+}
+
+.banner-caption p {
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.banner-caption {
+		bottom: 10px;
+		padding: .5rem .75rem;
+		max-width: 92%;
 	}
-	.logo-secondary {
-		height: 40px;
+
+	.banner-caption h2 {
+		font-size: 1.1rem;
+	}
+
+	.banner-caption p {
+		font-size: .85rem;
+	}
+
+	.banner-item img {
+		max-height: 320px;
+		object-fit: cover;
 	}
 }
 
 /* =========================================================
-HOME
+HERO
 ========================================================= */
 .home-hero {
-	padding: 60px 20px;
-	background: linear-gradient(
-		180deg,
-		#f4f8ff 0%,
-		#ffffff 100%
-	);
+	text-align: center;
+	padding: 4rem 1rem;
+	background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 100%);
 	border-bottom: 1px solid #e3eaf5;
+}
+
+.home-hero h1 {
+	font-weight: 800;
+	letter-spacing: 1px;
+	color: var(--color-azul);
+	position: relative;
+	display: inline-block;
+}
+
+.home-hero h1::after {
+	content: "";
+	display: block;
+	width: 60%;
+	height: 4px;
+	background-color: var(--color-amarillo);
+	margin: .5rem auto 0;
+	border-radius: 2px;
+}
+
+.home-hero h4 {
+	color: var(--color-amarillo);
+	font-weight: 600;
+}
+
+.home-hero p {
+	color: var(--color-muted);
+	max-width: 720px;
+	margin: 0 auto;
 }
 
 /* =========================================================
 CARDS GENERALES
 ========================================================= */
 .card {
-	border-radius: 6px;
-	border: 1px solid #e1e5ef;
-	transition: border-color 0.2s ease-in-out;
+	border: none;
+	border-radius: .75rem;
+	background: #fff;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+	transition: all .25s ease;
 }
 
 .card:hover {
-	border-color: var(--coop-azul);
+	transform: translateY(-6px);
+	box-shadow: 0 12px 32px rgba(0, 0, 0, .15);
 }
 
 .card h5 {
-	color: var(--coop-azul);
+	color: var(--color-azul);
+	font-weight: 700;
+	border-left: 5px solid var(--color-azul);
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 /* =========================================================
-SERVICIOS (DETALLE)
+TÍTULOS DE SECCIÓN
 ========================================================= */
-.servicio-detalle {
-	font-size: 15px;
-	color: #000;
+.section-title {
+	font-weight: 700;
+	color: var(--color-azul);
+	margin-bottom: 2rem;
+	position: relative;
 }
 
-.titulo-seccion {
+.section-title::after {
+	content: "";
+	width: 80px;
+	height: 4px;
+	background-color: var(--color-verde);
+	display: block;
+	margin-top: .5rem;
+	border-radius: 2px;
+}
+
+/* =========================================================
+NOTICIAS
+========================================================= */
+.card h6 {
+	font-weight: 700;
+}
+
+.card small {
+	font-size: .8rem;
+	color: var(--color-muted);
+}
+
+.card .btn-outline-primary {
+	border-color: var(--color-azul);
+	color: var(--color-azul);
+}
+
+.card .btn-outline-primary:hover {
+	background-color: var(--color-fucsia);
+	border-color: var(--color-fucsia);
+	color: #fff;
+}
+
+/* =========================================================
+AVISOS
+========================================================= */
+.alert-info {
+	background-color: #eef5ff;
+	border-left: 5px solid var(--color-verde);
+	color: #0b3d91;
+}
+
+/* =========================================================
+BOTONES
+========================================================= */
+.btn-primary {
+	background-color: var(--color-azul);
+	border-color: var(--color-azul);
+}
+
+.btn-primary:hover {
+	background-color: #083a7a;
+}
+
+.btn-outline-primary {
+	color: var(--color-azul);
+	border-color: var(--color-azul);
+}
+
+.btn-outline-primary:hover {
+	background-color: var(--color-azul);
+	color: #fff;
+}
+
+/* =========================================================
+TEXTOS UTILITARIOS
+========================================================= */
+.text-azul {
+	color: var(--color-azul);
+}
+
+.text-naranja {
+	color: var(--color-amarillo);
+}
+
+.text-verde {
+	color: var(--color-verde);
+}
+
+.text-fucsia {
+	color: var(--color-fucsia);
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+footer {
+	background-color: #1f2d3d;
+	color: #eaeaea;
+	padding: 3rem 1rem;
+}
+
+footer a {
+	color: var(--color-amarillo);
+}
+
+/* =========================================================
+WHATSAPP BUTTON
+========================================================= */
+.btn-wsp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 20px;
+	right: 20px;
+	background: #25d366;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* =========================================================
+UTILIDADES FALTANTES / AJUSTES BOOTSTRAP
+========================================================= */
+
+/* Texto secundario */
+.text-muted {
+	color: var(--color-muted) !important;
+}
+
+/* Cuerpo de cards */
+.card-body {
+	padding: 1.5rem;
+}
+
+/* Cards clicables (links completos) */
+a.card {
+	color: inherit;
+}
+
+a.card:hover {
+	text-decoration: none;
+}
+
+/* =========================================================
+OWL CAROUSEL – AJUSTES VISUALES
+========================================================= */
+
+.owl-carousel {
+	margin-bottom: 2rem;
+}
+
+/* Centrar dots */
+.owl-dots {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.owl-dot span {
+	width: 10px;
+	height: 10px;
+	background: #d0d0d0;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.owl-dot.active span {
+	background: var(--color-azul);
+}
+
+/* Flechas (si las usas) */
+.owl-nav button {
+	background: transparent;
+	border: none;
+	font-size: 2rem;
+	color: var(--color-azul);
+}
+
+.owl-nav button:hover {
+	color: var(--color-fucsia);
+}
+
+/* =========================================================
+SECCIONES HOME (ORDEN Y RESPIRACIÓN)
+========================================================= */
+
+.home-hero+section {
+	padding-top: 0;
+}
+
+.navbar {
+	background-color: #fff;
+	border-bottom: 4px solid var(--color-azul);
+	padding: .75rem 0;
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.logo-coopsercont {
+	height: 64px;
+	width: auto;
+}
+
+.logo-alcaldia {
+	height: 56px;
+	width: auto;
+}
+
+.navbar-nav .nav-link {
+	color: var(--color-azul);
 	font-weight: 600;
-	color: var(--coop-azul);
-	border-left: 5px solid var(--coop-azul);
-	padding-left: 10px;
-	margin-bottom: 10px;
+	padding: .5rem .75rem;
+}
+
+.navbar-nav .nav-link:hover {
+	color: var(--color-fucsia);
+}
+
+@media (max-width: 991px) {
+
+	.navbar {
+		padding: .5rem 0;
+	}
+
+	.logo-coopsercont {
+		height: 52px;
+	}
+
+	.logo-alcaldia {
+		height: 44px;
+	}
+
+	.navbar-brand {
+		gap: 10px;
+	}
+}
+
+/* =========================================================
+PÁGINAS DE SERVICIO – ESTILO INSTITUCIONAL
+========================================================= */
+
+.seccion-detalle {
+	width: 100%;
+	max-width: min(1100px, 95vw);
+	margin: 0 auto;
+	padding-inline: 1rem;
+}
+
+@media (max-width: 1200px) {
+	.seccion-detalle {
+		max-width: 960px;
+		/* laptop */
+	}
+}
+
+@media (max-width: 992px) {
+	.seccion-detalle {
+		max-width: 720px;
+		/* tablet */
+	}
+}
+
+@media (max-width: 576px) {
+	.seccion-detalle {
+		max-width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+/* HERO INTERNO */
+.page-hero {
+	padding: 3rem 1rem 2.5rem;
+	background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 100%);
+	border-bottom: 1px solid #e3eaf5;
+	color: var(--color-azul);
+}
+
+.page-hero h1 {
+	font-weight: 800;
+	color: var(--color-azul);
+	letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
+}
+
+.page-hero h1::after {
+	content: "";
+	display: block;
+	width: 60%;
+	height: 4px;
+	background-color: var(--color-amarillo);
+	margin: .5rem auto 0;
+	border-radius: 2px;
+}
+
+.page-hero p {
+	color: var(--color-muted);
+	max-width: 720px;
+	margin: 1rem auto 0;
+}
+
+/* IMAGEN INSTITUCIONAL */
+.img-infraestructura {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+	border-radius: .75rem;
+}
+
+/* BLOQUES DE CONTENIDO */
+.seccion-detalle section {
+	background: #fff;
+	padding: 1.75rem 2rem;
+	border-radius: .75rem;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+	margin-bottom: 1.75rem;
+}
+
+/* TÍTULOS DE BLOQUE */
+.titulo-seccion {
+	font-weight: 700;
+	color: var(--color-azul);
+	border-left: 5px solid var(--color-azul);
+	padding-left: 12px;
+	margin-bottom: 1rem;
+}
+
+/* LISTAS */
+.seccion-detalle ul {
+	padding-left: 1.25rem;
+}
+
+.seccion-detalle li {
+	margin-bottom: .4rem;
+}
+
+/* BOTÓN FINAL */
+.seccion-detalle .btn-primary {
+	padding: .6rem 1.25rem;
+	font-weight: 600;
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+	.seccion-detalle>h2:first-child {
+		padding: 2.5rem 1rem 1rem;
+		font-size: 1.4rem;
+	}
+
+	.seccion-detalle>p:first-of-type {
+		font-size: .95rem;
+		margin-bottom: 2rem;
+	}
 }
 
 /* =========================================================
@@ -149,30 +598,81 @@ TARIFAS (ESTILO PDF)
 }
 
 /* =========================================================
-AVISOS Y CAMPAÑAS
+AVISOS Y CAMPAÑAS – ESTILO INSTITUCIONAL
 ========================================================= */
-.avisos-pdf {
-	font-size: 14px;
-	color: #000;
+
+.avisos-page {
+	max-width: 1100px;
 }
 
-.aviso-tipo {
-	margin-top: 2rem;
-	margin-bottom: 0.5rem;
-	padding: 6px 10px;
-	font-weight: bold;
-	background-color: #e6efff;
-	border: 1px solid #9db7e5;
+/* BLOQUES AVISOS / CAMPAÑAS */
+.bloque-titulo {
+	background: linear-gradient(90deg,
+			var(--color-azul) 0%,
+			#123f9c 100%);
+	color: #fff;
+	font-weight: 700;
+	padding: .6rem 1rem;
+	border-radius: .5rem;
+	margin-bottom: 1.5rem;
+	letter-spacing: .5px;
 }
 
-.aviso-item {
-	border-left: 4px solid var(--coop-azul);
-	font-size: 14px;
+/* AVISOS DE TEXTO */
+.aviso-item-texto {
+	background: #fff;
+	padding: 1.25rem 1.5rem;
+	border-radius: .75rem;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+	margin-bottom: 1rem;
 }
 
-.aviso-item p {
-	margin-top: 4px;
-	color: #333;
+.aviso-item-texto h6 {
+	color: var(--color-azul);
+}
+
+.aviso-item-texto p {
+	color: var(--color-texto);
+}
+
+/* CAMPAÑAS */
+.campania-card {
+	background: #fff;
+	border-radius: .75rem;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+	overflow: hidden;
+	height: 100%;
+	transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.campania-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 14px 36px rgba(0, 0, 0, .15);
+}
+
+.campania-img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	background-color: #f8f9fa;
+}
+
+.campania-body {
+	padding: 1.25rem;
+}
+
+.campania-body h6 {
+	font-weight: 700;
+	color: var(--color-azul);
+}
+
+.campania-body p {
+	color: var(--color-muted);
+}
+
+/* ESTADOS VACÍOS */
+.avisos-page .alert {
+	border-left: 5px solid var(--color-verde);
 }
 
 /* =========================================================
@@ -182,252 +682,4 @@ ALERTAS
 	background-color: #eef5ff;
 	border-color: var(--coop-azul);
 	color: #0b3d91;
-}
-
-/* =========================================================
-BOTONES
-========================================================= */
-.btn-primary {
-	background-color: var(--coop-azul);
-	border-color: var(--coop-azul);
-}
-
-.btn-primary:hover {
-	background-color: #083a7a;
-	border-color: #083a7a;
-}
-
-.btn-outline-primary {
-	color: var(--coop-azul);
-	border-color: var(--coop-azul);
-}
-
-.btn-outline-primary:hover {
-	background-color: var(--coop-azul);
-	color: #fff;
-}
-
-/* =========================================================
-FOOTER
-========================================================= */
-footer {
-	background-color: #1f2d3d;
-	color: #eaeaea;
-}
-
-footer small {
-	font-size: 13px;
-}
-
-/* =========================================================
-IMPRESIÓN
-========================================================= */
-@media print {
-	.navbar,
-	footer,
-	.btn {
-		display: none !important;
-	}
-
-	body {
-		font-size: 13px;
-	}
-}
-
-/* ==========================
-TARIFAS ESTILO PDF
-========================== */
-
-.tarifas-pdf {
-	font-size: 14px;
-	color: #000;
-}
-
-.tarifa-servicio {
-	margin-top: 2.5rem;
-	margin-bottom: 0.5rem;
-	padding: 6px 10px;
-	font-weight: bold;
-	background-color: #e6efff;
-	border: 1px solid #9db7e5;
-}
-
-.tarifa-subtitulo {
-	margin: 6px 0;
-	font-weight: 600;
-}
-
-.tarifa-table {
-	border-collapse: collapse;
-	margin-bottom: 1.5rem;
-}
-
-.tarifa-table th {
-	background-color: #d9e6ff;
-	text-align: center;
-	font-weight: bold;
-	font-size: 13px;
-	border: 1px solid #9db7e5;
-}
-
-.tarifa-table td {
-	border: 1px solid #cfd6e4;
-	vertical-align: middle;
-	padding: 4px 6px;
-}
-
-.tarifa-table td,
-.tarifa-table th {
-	white-space: nowrap;
-}
-/* =========================================================
-AVISOS Y CAMPAÑAS
-========================================================= */
-
-.avisos-page {
-	font-size: 15px;
-}
-
-/* TÍTULOS DE BLOQUE (AVISOS / CAMPAÑAS) */
-.bloque-titulo {
-	background-color: #e6efff;
-	border: 1px solid #9db7e5;
-	padding: 6px 12px;
-	font-weight: bold;
-	margin-bottom: 1.5rem;
-}
-
-/* AVISOS DE TEXTO */
-.aviso-item-texto {
-	padding: 12px 0;
-	border-bottom: 1px solid #e1e5ef;
-}
-
-.aviso-item-texto:last-child {
-	border-bottom: none;
-}
-
-/* CAMPAÑAS */
-.campania-card {
-	border: 1px solid #e1e5ef;
-	border-radius: 6px;
-	overflow: hidden;
-	height: 100%;
-	background-color: #fff;
-}
-
-.campania-img {
-	width: 100%;
-	height: auto;
-	object-fit: contain;
-	background-color: #f8f9fa;
-}
-
-.campania-body {
-	padding: 12px;
-}
-
-/* =========================================================
-IMÁGENES INSTITUCIONALES
-========================================================= */
-
-/* Planta de tratamiento / infraestructura */
-.img-infraestructura {
-	max-width: 900px;
-	width: 100%;
-	border: 1px solid #dee2e6;
-	border-radius: 6px;
-}
-
-/* Sede administrativa */
-.img-sede {
-	max-width: 700px;
-	width: 100%;
-	border: 1px solid #dee2e6;
-	border-radius: 6px;
-}
-
-/* Ajuste móvil */
-@media (max-width: 576px) {
-	.img-infraestructura,
-	.img-sede {
-		max-width: 100%;
-	}
-}
-
-.transparencia h5 {
-	font-weight: 600;
-}
-
-.transparencia .card {
-	border: 1px solid #e1e5ef;
-}
-
-/* =========================================================
-TRANSPARENCIA – ESTADO VACÍO
-========================================================= */
-
-.transparencia-empty {
-	background-color: #f0f6ff;
-	border: 1px solid #9db7e5;
-	color: #0b3d91;
-	padding: 20px;
-	border-radius: 6px;
-	margin-top: 20px;
-}
-
-mark {
-	background-color: #ffe066;
-	padding: 2px 4px;
-	border-radius: 3px;
-}
-
-/* =========================================================
-TEXTOS
-========================================================= */
-.text-azul {
-	color: var(--coop-azul);
-}
-.text-verde {
-	color: var(--coop-verde);
-}
-.text-naranja {
-	color: var(--coop-naranja);
-}
-.text-morado {
-	color: var(--coop-morado);
-}
-.text-gris {
-	color: var(--coop-gris);
-}
-.text-gris-claro {
-	color: var(--coop-gris-claro);
-}
-
-/* =========================================================
-BTN WHATSAPP
-========================================================= */
-.btn-wsp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-	z-index: 999;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: pulse 1.5s infinite;
-	transition: transform 0.3s;
-	text-decoration: none;
-}
-
-.btn-wsp:hover {
-	transform: scale(1.1);
 }

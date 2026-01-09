@@ -2,16 +2,13 @@
 @section('title', 'Tarifas Oficiales')
 @section('meta_description', 'Consulta las tarifas oficiales de los servicios de acueducto, alcantarillado y aseo en El Contadero.')
 @section('content')
-	<div class="container tarifas-pdf">
-
-		<h2 class="text-center mb-1 fw-bold">
+	<div class="container seccion-detalle">
+		<h2 class="fw-bold mb-3 text-center text-azul">
 			TARIFAS DE SERVICIOS PÚBLICOS
 		</h2>
-
 		<p class="text-center text-muted mb-4">
 			Periodo: Noviembre 2025 · Valores oficiales
 		</p>
-
 		@foreach ($tarifas as $servicio => $items)
 			{{-- TÍTULO DE SERVICIO --}}
 			<div class="tarifa-servicio">

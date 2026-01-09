@@ -33,8 +33,8 @@ class ReporteController extends Controller
 
 		Report::create($data);
 
-		// ðŸ“§ ENVIAR CORREO
-		Mail::to('christiandavidcortes@gmail.com')->send(new ReportCreatedMail($data));
+		// ENVIAR CORREO
+		Mail::to('notificaciones@coopsercont.com.co')->send(new ReportCreatedMail($data));
 
 		return back()->with('success', 'Reporte enviado correctamente.');
 	}

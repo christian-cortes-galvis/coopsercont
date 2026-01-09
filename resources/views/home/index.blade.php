@@ -1,26 +1,29 @@
 @extends('layouts.app')
 @section('title', 'Inicio')
-@section('meta_description', 'COOPSERCONT presta los servicios públicos de acueducto, alcantarillado y aseo en el municipio de El Contadero.')
+@section('meta_description',
+	'COOPSERCONT presta los servicios públicos de acueducto, alcantarillado y aseo en el municipio de El Contadero.')
 @section('content')
 	<div class="container">
 		<section>
-			<div id="sliderInicial" class="carousel slide">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="{{ asset('assets/banner/1.jpeg') }}" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item">
-						<img src="{{ asset('assets/banner/2.jpeg') }}" class="d-block w-100" alt="...">
+			<div id="owlCarouselHome" class='owl-carousel owl-theme'>
+				<div class="item">
+					<div class="banner-item">
+						<img src="{{ asset('assets/banner/1.jpeg') }}" class="img-fluid" alt="">
+						<div class="banner-caption">
+							<h2 class="text-naranja">Título principal</h2>
+							<p class="text-light">Texto descriptivo del banner</p>
+						</div>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#sliderInicial" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Atrás</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#sliderInicial" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Adelante</span>
-				</button>
+				<div class="item">
+					<div class="banner-item">
+						<img src="{{ asset('assets/banner/2.jpeg') }}" class="img-fluid" alt="">
+						<div class="banner-caption">
+							<h2 class="text-naranja">Título principal</h2>
+							<p class="text-light">Texto descriptivo del banner</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		{{-- HERO --}}
@@ -148,11 +151,20 @@
 	</div>
 @endsection
 @push('scripts')
- <script type="">
-	const sliderInicial = document.querySelector('#sliderInicial')
-	const carousel = new bootstrap.Carousel(sliderInicial, {
-		interval: 2000,
-		touch: false
-	})
- </script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#owlCarouselHome').owlCarousel({
+				loop              : true,
+				margin            : 10,
+				dots              : true,
+				navText           : [ '<i class="fas fa-chevron-circle-left"></i>', '<i class="fas fa-chevron-circle-right"></i>' ],
+				nav               : true,
+				items             : 1,
+				autoplay          : true,
+				autoplayTimeout   : 5000,
+				autoplayHoverPause: true,
+				smartSpeed        : 800
+			});
+		});
+	</script>
 @endpush

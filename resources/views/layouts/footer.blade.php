@@ -5,6 +5,6 @@
 				L-V 8:00-12:00 / 2:00-6:00
 			</small>
 			<br>
-			<p class="mb-0">Copyright © {{date('Y')}}. Ticware. <i class="fas fa-code"></i> Desarrollado por Ticware <b>Version</b> 1.0</p>
+			<p class="mb-0">Copyright © {{date('Y')}}. Ticware Solutions. <i class="fas fa-code"></i> Desarrollado por Ticware Solutions <b>Versión</b> 1.0</p>
 		</div>
 	</footer>

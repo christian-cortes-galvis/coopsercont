@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\{Route, Artisan};
-use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, SearchController, ReporteController};
+use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, SearchController, ReporteController, PqrsController};
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/servicios/acueducto', fn () => view('servicios.acueducto'))->name('servicios.acueducto');
@@ -10,6 +10,8 @@ Route::get('/servicios/aseo', fn () => view('servicios.aseo'))->name('servicios.
 Route::get('/tarifas', [TarifaController::class, 'index']);
 Route::get('/avisos', [AvisoController::class, 'index']);
 Route::get('/reporte', fn () => view('reportes.index'))->name('reporte.index');
+Route::get('/pqrs', fn () => view('pqrs.index'))->name('pqrs.index');
+Route::post('/crearPQRS', [PqrsController::class, 'create'])->name('crearPQRS');
 Route::post('/crearReporte', [ReporteController::class, 'create'])->name('crearReporte');
 Route::get('/contacto', fn () => view('contacto.index'))->name('contacto');
 

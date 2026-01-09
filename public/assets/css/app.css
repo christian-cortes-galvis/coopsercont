@@ -683,3 +683,129 @@ ALERTAS
 	border-color: var(--coop-azul);
 	color: #0b3d91;
 }
+
+/* =========================================================
+BOTONES
+========================================================= */
+
+.btn-azul {
+	color: #fff;
+	background-color: var(--color-azul);
+	border: 1px solid var(--color-azul);
+}
+
+.btn-azul:hover,
+.btn-azul:focus {
+	background-color: #0b337a;
+	border-color: #0b337a;
+	color: #fff;
+}
+
+.btn-azul:active {
+	background-color: #092a66;
+	border-color: #092a66;
+}
+
+/* Amarillo */
+.btn-amarillo {
+	color: #000;
+	background-color: var(--color-amarillo);
+	border: 1px solid var(--color-amarillo);
+}
+
+.btn-amarillo:hover,
+.btn-amarillo:focus {
+	background-color: #e0a800;
+	border-color: #e0a800;
+	color: #000;
+}
+
+.btn-amarillo:active {
+	background-color: #c99600;
+	border-color: #c99600;
+}
+
+/* Verde */
+.btn-verde {
+	color: #fff;
+	background-color: var(--color-verde);
+	border: 1px solid var(--color-verde);
+}
+
+.btn-verde:hover,
+.btn-verde:focus {
+	background-color: #277a4b;
+	border-color: #277a4b;
+	color: #fff;
+}
+
+.btn-verde:active {
+	background-color: #1f633d;
+	border-color: #1f633d;
+}
+
+/* Fucsia */
+.btn-fucsia {
+	color: #fff;
+	background-color: var(--color-fucsia);
+	border: 1px solid var(--color-fucsia);
+}
+
+.btn-fucsia:hover,
+.btn-fucsia:focus {
+	background-color: #a3154d;
+	border-color: #a3154d;
+	color: #fff;
+}
+
+.btn-fucsia:active {
+	background-color: #8a1242;
+	border-color: #8a1242;
+}
+
+.btn-outline-azul {
+	color: var(--color-azul);
+	background-color: transparent;
+	border: 1px solid var(--color-azul);
+}
+
+.btn-outline-azul:hover {
+	background-color: var(--color-azul);
+	color: #fff;
+}
+
+/* Amarillo */
+.btn-outline-amarillo {
+	color: var(--color-amarillo);
+	background-color: transparent;
+	border: 1px solid var(--color-amarillo);
+}
+
+.btn-outline-amarillo:hover {
+	background-color: var(--color-amarillo);
+	color: #000;
+}
+
+/* Verde */
+.btn-outline-verde {
+	color: var(--color-verde);
+	background-color: transparent;
+	border: 1px solid var(--color-verde);
+}
+
+.btn-outline-verde:hover {
+	background-color: var(--color-verde);
+	color: #fff;
+}
+
+/* Fucsia */
+.btn-outline-fucsia {
+	color: var(--color-fucsia);
+	background-color: transparent;
+	border: 1px solid var(--color-fucsia);
+}
+
+.btn-outline-fucsia:hover {
+	background-color: var(--color-fucsia);
+	color: #fff;
+}

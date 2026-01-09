@@ -66,20 +66,17 @@
 				<div class="card h-100">
 					<div class="card-body">
 						<h5 class="fw-bold mb-3">
-							Peticiones, Quejas, Reclamos, Denuncias y Sugerencias (PQRDS)
+							Peticiones, Quejas, Reclamos o Solicitudes (PQRS)
 						</h5>
 						<p>
-							La ciudadanía puede presentar peticiones, quejas, reclamos,
-							denuncias o sugerencias relacionadas con la gestión
-							institucional de COOPSERCONT.
+							La ciudadanía puede presentar peticiones, quejas, reclamos o solicitudes relacionadas con la gestión institucional de COOPSERCONT.
 						</p>
 						<p class="text-muted">
 							Este canal es diferente al reporte de novedades técnicas
 							de los servicios públicos.
 						</p>
-						{{-- Si luego hay formulario PQRDS --}}
-						<a href="#" class="btn btn-outline-primary disabled">
-							PQRDS (próximamente)
+						<a href="{{ url('/pqrs') }}" class="btn btn-primary">
+							Realizar PQRS
 						</a>
 					</div>
 				</div>
@@ -98,7 +95,7 @@
 							utilice el formulario de reporte de novedades.
 						</p>
 						<a href="{{ url('/reporte') }}" class="btn btn-primary">
-							Realizar reporte
+							Realizar Reporte
 						</a>
 					</div>
 				</div>

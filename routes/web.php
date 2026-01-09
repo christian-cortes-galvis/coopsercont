@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\{Route, Artisan};
 use App\Http\Controllers\{HomeController, NewsController, TarifaController, AvisoController, SearchController, ReporteController};
 
 Route::get('/', [HomeController::class, 'index']);
@@ -25,15 +25,29 @@ Route::get('/buscar', [SearchController::class, 'index'])->name('buscar');
 Route::prefix('transparencia')->group(function () {
 	Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');
 
-	Route::get('/instrumentos', fn () => view('transparencia.instrumentos'));
 	Route::get('/tramites', fn () => view('transparencia.tramites'));
+	Route::get('/normatividad', fn () => view('transparencia.normatividad'));
+	Route::get('/presupuesto', fn () => view('transparencia.presupuesto'))->name('transparencia.presupuesto');
 
-	Route::get('/transparencia/presupuesto', fn () => view('transparencia.presupuesto'))->name('transparencia.presupuesto');
-
-	Route::get('/transparencia/contratacion', fn () => view('transparencia.contratacion.index'))->name('transparencia.contratacion');
+	Route::get('/contratacion', fn () => view('transparencia.contratacion.index'));
 	Route::get('/contratacion/plan-anual', fn () => view('transparencia.contratacion.plan'));
 	Route::get('/contratacion/ejecucion', fn () => view('transparencia.contratacion.ejecucion'));
+});
 
-	Route::get('/presupuesto', fn () => view('transparencia.presupuesto'));
-	Route::get('/normatividad', fn () => view('transparencia.normatividad'));
+Route::get('/clearCache', function () {
+	Artisan::call('optimize:clear');
+	Artisan::call('config:clear');
+	Artisan::call('config:cache');
+	Artisan::call('cache:clear');
+	Artisan::call('route:clear');
+	Artisan::call('view:clear');
+	Artisan::call('package:discover');
+	Artisan::call('config:cache');
+	Artisan::call('view:cache');
+	return redirect('/');
+});
+
+Route::get('/createLink', function () {
+	Artisan::call('storage:link');
+	return redirect('/');
 });

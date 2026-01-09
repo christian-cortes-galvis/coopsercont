@@ -14,6 +14,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/svg" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32"/>
 	<link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
+	<!-- Font Awesome icons (free version)-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-coopsercont">
@@ -142,6 +144,9 @@
 			</small>
 		</div>
 	</footer>
+	<a href="https://wa.me/573202066853" class="btn-wsp" target="_blank" aria-label="Chatear por WhatsApp">
+		<i class="fab fa-whatsapp"></i>
+	</a>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

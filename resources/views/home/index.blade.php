@@ -10,8 +10,8 @@
 					<div class="banner-item">
 						<img src="{{ asset('assets/banner/1.jpeg') }}" class="img-fluid" alt="">
 						<div class="banner-caption">
-							<h2 class="text-naranja">Título principal</h2>
-							<p class="text-light">Texto descriptivo del banner</p>
+							<h2 class="text-naranja">Alcantarillado seguro</h2>
+							<p class="text-light">Soluciones que garantizan sistemas de alcantarillado eficientes y sostenibles</p>
 						</div>
 					</div>
 				</div>
@@ -19,8 +19,8 @@
 					<div class="banner-item">
 						<img src="{{ asset('assets/banner/2.jpeg') }}" class="img-fluid" alt="">
 						<div class="banner-caption">
-							<h2 class="text-naranja">Título principal</h2>
-							<p class="text-light">Texto descriptivo del banner</p>
+							<h2 class="text-naranja">Servicios de acueducto garantizados</h2>
+							<p class="text-light">Ingeniería que protege el recurso más valioso y genera ahorros sostenibles.</p>
 						</div>
 					</div>
 				</div>

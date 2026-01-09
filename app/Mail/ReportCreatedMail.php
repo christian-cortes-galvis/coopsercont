@@ -18,14 +18,10 @@ class ReportCreatedMail extends Mailable
 
 	public function build()
 	{
-		$mail = $this->subject('Nuevo reporte ciudadano recibido')
-			->view('emails.reporte-creado');
-
+		$mail = $this->subject('Nuevo reporte ciudadano recibido')->view('emails.reporte-creado');
 		// Adjuntar foto si existe
 		if (!empty($this->reporte['foto'])) {
-			$mail->attach(
-				storage_path('app/' . $this->reporte['foto'])
-			);
+			$mail->attach( storage_path('app/public/' . $this->reporte['foto']) );
 		}
 
 		return $mail;

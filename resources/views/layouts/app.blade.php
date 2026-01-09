@@ -144,7 +144,7 @@
 			</small>
 		</div>
 	</footer>
-	<a href="https://wa.me/573202066853" class="btn-wsp" target="_blank" aria-label="Chatear por WhatsApp">
+	<a href="https://wa.me/573000000000" class="btn-wsp" target="_blank" aria-label="Chatear por WhatsApp">
 		<i class="fab fa-whatsapp"></i>
 	</a>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

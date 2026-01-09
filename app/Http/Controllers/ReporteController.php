@@ -4,18 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Report;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use App\Mail\ReportCreatedMail;
 use Illuminate\Support\Facades\Mail;
 
 class ReporteController extends Controller
 {
-	public function create()
+	public function index()
 	{
 		return view('reportes.create');
 	}
 
-	public function store(Request $request)
+	public function create(Request $request)
 	{
 		$data = $request->validate([
 			'nombre'          => 'required|string|max:255',
@@ -25,7 +24,7 @@ class ReporteController extends Controller
 			'email'           => 'nullable|email',
 			'tipo_incidencia' => 'required|string|max:100',
 			'descripcion'     => 'required|string',
-			'foto'            => 'nullable|image|max:2048',
+			'foto'            => 'nullable|image|max:1024',
 		]);
 
 		if ($request->hasFile('foto')) {
@@ -34,8 +33,8 @@ class ReporteController extends Controller
 
 		Report::create($data);
 
-		// 📧 ENVIAR CORREO
-		Mail::to('reportes@coopsercont.com')->send(new ReportCreatedMail($data));
+		// ðŸ“§ ENVIAR CORREO
+		Mail::to('christiandavidcortes@gmail.com')->send(new ReportCreatedMail($data));
 
 		return back()->with('success', 'Reporte enviado correctamente.');
 	}

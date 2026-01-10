@@ -2,7 +2,7 @@
 @section('title', 'Noticias')
 @section('meta_description', 'Consulta las noticias institucionales y comunicados oficiales de COOPSERCONT en El Contadero.')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
 			NOTICIAS INSTITUCIONALES
 		</h2>

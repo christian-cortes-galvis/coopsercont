@@ -22,6 +22,25 @@ body {
 	background-color: #fff;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px; /* altura del navbar */
+}
+
+.contenido {
+    flex: 1; /* empuja el footer hacia abajo */
+}
+
+.footer {
+    margin-top: auto;
+}
+
 h1,
 h2,
 h3 {

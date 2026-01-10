@@ -1,4 +1,4 @@
-	<footer class="bg-dark text-white py-4">
+	<footer class="footer bg-dark text-white text-center py-3">
 		<div class="container text-center">
 			<small>
 				Calle 4 No. 4-12 Barrio El Centro · NIT 900027859-1<br>

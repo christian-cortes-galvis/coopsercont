@@ -2,7 +2,7 @@
 @section('title', 'Servicio de Acueducto')
 @section('meta_description', 'Servicio público de acueducto en El Contadero. Agua potable segura, continua y de calidad.')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
 			SERVICIO DE ACUEDUCTO
 		</h2>

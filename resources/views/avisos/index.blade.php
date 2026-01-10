@@ -4,7 +4,7 @@
 @section('meta_description', 'Avisos y campañas informativas de COOPSERCONT dirigidas a la comunidad.')
 
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
 			AVISOS Y CAMPAÑAS INFORMATIVAS
 		</h2>

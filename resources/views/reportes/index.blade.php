@@ -5,7 +5,7 @@
 	Contadero.')
 
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">Formulario de Reporte <i class="fas fa-file-alt"></i></h2>
 
 		{{-- Mensaje general --}}

@@ -3,7 +3,7 @@
 @section('title', 'Presupuesto | COOPSERCONT')
 @section('meta_description', 'Información presupuestal y financiera de COOPSERCONT.')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">Presupuesto y estados financieros</h2>
 		<p>
 			COOPSERCONT publica la información presupuestal y financiera en cumplimiento

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Servicio de Alcantarillado')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
 			SERVICIO DE ALCANTARILLADO
 		</h2>

@@ -2,7 +2,7 @@
 @section('title', 'Transparencia')
 @section('meta_description', 'Información sobre transparencia y acceso a la información pública de COOPSERCONT en El Contadero.')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
 			TRANSPARENCIA Y ACCESO A LA INFORMACIÓN
 		</h2>

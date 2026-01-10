@@ -3,7 +3,7 @@
 @section('title', 'Peticiones, Quejas, Reclamos o Solicitudes')
 @section('meta_description', 'En esta sección puedes enviar tus peticiones, quejas, reclamos o solicitudes a la cooperativa. Estamos aquí para escucharte y mejorar nuestros servicios.')
 @section('content')
-	<div class="container seccion-detalle">
+	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">Peticiones, Quejas, Reclamos o Solicitudes <i class="fas fa-file-alt"></i></h2>
 
 		{{-- Mensaje general --}}

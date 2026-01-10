@@ -1,4 +1,4 @@
-	<nav class="navbar navbar-expand-lg navbar-coopsercont">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-coopsercont">
 		<div class="container">
 			{{-- LOGOS --}}
 			<div class="navbar-brand d-flex align-items-center gap-3">

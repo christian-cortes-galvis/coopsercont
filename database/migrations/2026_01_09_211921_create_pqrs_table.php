@@ -6,12 +6,12 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('pqrs', function (Blueprint $table) {
+	/**
+	* Run the migrations.
+	*/
+	public function up(): void
+	{
+		Schema::create('pqrs', function (Blueprint $table) {
 			$table->id();
 			$table->timestamps();
 			$table->string('nombre');
@@ -24,14 +24,14 @@ return new class extends Migration
 			$table->string('foto')->nullable();
 			$table->string('estado')->default('pendiente');
 			$table->boolean('activo')->default(true);
-        });
-    }
+		});
+	}
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('pqrs');
-    }
+	/**
+	* Reverse the migrations.
+	*/
+	public function down(): void
+	{
+		Schema::dropIfExists('pqrs');
+	}
 };

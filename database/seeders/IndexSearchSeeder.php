@@ -96,36 +96,20 @@ class IndexSearchSeeder extends Seeder
 				'tipo' => 'transparencia',
 			],
 			[
-				'titulo' => 'Contratación',
+				'titulo' => 'Trámites y Servicios',
 				'contenido' => '
-					Información relacionada con los procesos de contratación,
-					el plan anual de adquisiciones y la ejecución de contratos
-					realizados por la entidad.
+					Información sobre los trámites y servicios que ofrece
+					COOPSERCONT a los usuarios, incluyendo requisitos,
+					procedimientos y formularios necesarios.
 				',
 				'keywords' => '
-					contratación contratos
-					plan anual de adquisiciones
-					procesos contractuales
+					trámites servicios
+					requisitos procedimientos formularios
+					usuarios
 				',
-				'url' => '/transparencia/contratacion',
+				'url' => '/transparencia/tramites',
 				'tipo' => 'transparencia',
 			],
-			[
-				'titulo' => 'Presupuesto',
-				'contenido' => '
-					Información presupuestal de la entidad, incluyendo estados
-					financieros, ejecución presupuestal y uso de los recursos
-					públicos.
-				',
-				'keywords' => '
-					presupuesto estados financieros
-					ejecución presupuestal
-					recursos públicos
-				',
-				'url' => '/transparencia/presupuesto',
-				'tipo' => 'transparencia',
-			],
-
 			// ================= INSTITUCIONAL =================
 			[
 				'titulo' => 'Atención al Ciudadano',
@@ -140,6 +124,36 @@ class IndexSearchSeeder extends Seeder
 					atención presencial telefónica
 				',
 				'url' => '/contacto',
+				'tipo' => 'institucional',
+			],
+			[
+				'titulo' => 'Reporte de Fallas en el Servicio',
+				'contenido' => '
+					Canal para que los usuarios reporten fallas o interrupciones
+					en los servicios públicos de acueducto, alcantarillado y aseo,
+					garantizando una respuesta oportuna y eficiente.
+				',
+				'keywords' => '
+					reporte de fallas
+					interrupciones del servicio
+					acueducto alcantarillado aseo
+				',
+				'url' => '/reporte',
+				'tipo' => 'institucional',
+			],
+			[
+				'titulo' => 'PQRS - Peticiones, Quejas, Reclamos y Solicitudes',
+				'contenido' => '
+					Sistema de gestión de PQRS que permite a los usuarios
+					presentar sus peticiones, quejas, reclamos
+					y solicitudes para mejorar la calidad del servicio.
+				',
+				'keywords' => '
+					pqrs peticiones quejas reclamos solicitudes
+					calidad del servicio
+					gestión de pqrs
+				',
+				'url' => '/pqrs',
 				'tipo' => 'institucional',
 			],
 			[
@@ -159,14 +173,14 @@ class IndexSearchSeeder extends Seeder
 				'tipo' => 'institucional',
 			],
 			[
-				'titulo' => 'Estructura Orgánica y Talento Humano',
+				'titulo' => 'Estructura Organizacional y Talento Humano',
 				'contenido' => '
-					Información sobre la estructura orgánica de la entidad,
+					Información sobre la estructura organizacional de la entidad,
 					conformada por la Asamblea General, el Consejo de
 					Administración, la Gerencia y el talento humano.
 				',
 				'keywords' => '
-					estructura orgánica
+					estructura organizacional
 					talento humano
 					asamblea general
 					consejo de administración

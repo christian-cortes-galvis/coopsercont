@@ -3,17 +3,24 @@
 @section('meta_description', 'Compromiso ambiental de COOPSERCONT con la gestión responsable del agua y los residuos sólidos.')
 @section('content')
 	<div class="container seccion-detalle mt-4">
-
 		<h2 class="fw-bold text-center mb-4">
 			COMPROMISO AMBIENTAL
 		</h2>
-
+		<div class="my-4 text-center">
+			<div class="row justify-content-center g-3">
+				<div class="col-12 col-md-6">
+					<img src="{{ asset('institucional/ambiental1.png') }}" class="img-fluid rounded border img-infraestructura" alt="Ambiental 1">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{ asset('institucional/ambiental2.png') }}" class="img-fluid rounded border img-infraestructura" alt="Ambiental 2">
+				</div>
+			</div>
+		</div>
 		<p>
 			COOPSERCONT reafirma su compromiso con la protección del medio ambiente,
 			la gestión responsable de los recursos naturales y el fortalecimiento
 			de la cultura ciudadana ambiental en el municipio de El Contadero.
 		</p>
-
 		<h5 class="titulo-seccion">Gestión ambiental</h5>
 		<ul>
 			<li>Gestión integral de residuos sólidos</li>
@@ -21,13 +28,11 @@
 			<li>Reducción del impacto ambiental</li>
 			<li>Protección de las fuentes hídricas</li>
 		</ul>
-
 		<h5 class="titulo-seccion">Educación y cultura ciudadana</h5>
 		<ul>
 			<li>Campañas educativas sobre uso eficiente del agua</li>
 			<li>Campañas sobre manejo adecuado de residuos sólidos</li>
 			<li>Jornadas de sensibilización ambiental</li>
 		</ul>
-
 	</div>
 @endsection

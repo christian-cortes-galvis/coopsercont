@@ -20,20 +20,14 @@ Route::get('/noticias/{news}', [NewsController::class, 'show'])->name('noticias.
 
 Route::get('/compromiso-ambiental', fn () => view('institucional.compromiso-ambiental'))->name('compromiso.ambiental');
 
-Route::get('/estructura-organica', fn () => view('institucional.estructura-organica'))->name('estructura.organica');
+Route::get('/estructura-organizacional', fn () => view('institucional.estructura-organizacional'))->name('estructura.organizacional');
 
 Route::get('/buscar', [SearchController::class, 'index'])->name('buscar');
 
 Route::prefix('transparencia')->group(function () {
 	Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');
-
 	Route::get('/tramites', fn () => view('transparencia.tramites'));
 	Route::get('/normatividad', fn () => view('transparencia.normatividad'));
-	Route::get('/presupuesto', fn () => view('transparencia.presupuesto'))->name('transparencia.presupuesto');
-
-	Route::get('/contratacion', fn () => view('transparencia.contratacion.index'));
-	Route::get('/contratacion/plan-anual', fn () => view('transparencia.contratacion.plan'));
-	Route::get('/contratacion/ejecucion', fn () => view('transparencia.contratacion.ejecucion'));
 });
 
 Route::get('/clearCache', function () {

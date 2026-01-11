@@ -32,29 +32,18 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item text-azul" href="{{ url('/transparencia/presupuesto') }}">
-									Presupuesto y estados financieros
-								</a>
-							</li>
-							<li>
 								<a class="dropdown-item text-azul" href="{{ url('/transparencia/normatividad') }}">
 									Normatividad
 								</a>
 							</li>
 							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li class="dropdown-header">
-								Contratación
-							</li>
-							<li>
-								<a class="dropdown-item text-azul" href="{{ url('/transparencia/contratacion/plan-anual') }}">
-									Plan anual de adquisiciones
+								<a class="dropdown-item text-azul" href="{{ url('/compromiso-ambiental') }}">
+									Compromiso Ambiental
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item text-azul" href="{{ url('/transparencia/contratacion/ejecucion') }}">
-									Ejecución de contratos
+								<a class="dropdown-item text-azul" href="{{ url('/estructura-organizacional') }}">
+									Estructura Organizacional
 								</a>
 							</li>
 						</ul>

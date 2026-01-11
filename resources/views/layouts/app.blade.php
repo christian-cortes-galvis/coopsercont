@@ -13,14 +13,14 @@
 	<meta property="og:locale" content="es_CO">
 	<!-- BOOTSTRAP 5.2.3 -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/svg" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32"/>
+	<link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32"/>
 	<!-- APP CSS -->
-	<link href="{{ asset('assets/css/app.css') }}?5" rel="stylesheet">
+	<link href="{{ asset('assets/css/app.css') }}?6" rel="stylesheet">
 	<!-- OWL CAROUSEL 2.3.4-->
-	<link rel="stylesheet" href="vendor/owl-carousel/dist/css/owl.carousel.css">
-	<link rel="stylesheet" href="vendor/owl-carousel/dist/css/owl.theme.default.css">
+	<link rel="stylesheet" href="{{ asset('vendor/owl-carousel/dist/css/owl.carousel.css') }}">
+	<link rel="stylesheet" href="{{ asset('vendor/owl-carousel/dist/css/owl.theme.default.css') }}">
 	<!-- Font Awesome icons (free version)-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" defer/>
 	@yield("style")
 	@stack('styles')
 </head>
@@ -34,11 +34,11 @@
 	</a>
 	@include('layouts.footer')
 	<!-- JQUERY 3.7.1 -->
-	<script src="vendor/jquery/dist/js/jquery.js"></script>
+	<script src="{{ asset('vendor/jquery/dist/js/jquery.js') }}"></script>
 	<!-- BOOTSTRAP 5.2.3 -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- OWL CAROUSEL 2.3.4-->
-	<script src="vendor/owl-carousel/dist/js/owl.carousel.js"></script>
+	<script src="{{ asset('vendor/owl-carousel/dist/js/owl.carousel.js') }}" defer></script>
 	@stack('scripts')
 	@yield("datatable")
 	@yield("script")

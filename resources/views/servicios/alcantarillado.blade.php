@@ -8,7 +8,9 @@
 		<p class="text-center text-muted mb-4">
 			Operación y mantenimiento del sistema de alcantarillado del municipio de El Contadero
 		</p>
-		{{-- DESCRIPCIÓN --}}
+		<div class="my-4 text-center">
+			<img src="{{ asset('institucional/alcantarillado.jpeg') }}" class="img-fluid rounded border img-infraestructura" alt="Alcantarillado">
+		</div>
 		<section class="mb-4">
 			<h5 class="titulo-seccion">Descripción del sistema</h5>
 			<p>

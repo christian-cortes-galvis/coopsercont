@@ -61,6 +61,18 @@
 					Ver norma
 				</a>
 			</li>
+			<li class="list-group-item">
+				<strong>Acuerdo No 618 DE 2018</strong><br>
+				<a href="{{ asset('normatividad/acuerdo_0618_2018.pdf') }}" target="_blank" rel="noopener">
+					Ver norma
+				</a>
+			</li>
+			<li class="list-group-item">
+				<strong>Acuerdo No 02 DE 2022</strong><br>
+				<a href="{{ asset('normatividad/acuerdo_02_2022.pdf') }}" target="_blank" rel="noopener">
+					Ver norma
+				</a>
+			</li>
 		</ul>
 	</div>
 @endsection

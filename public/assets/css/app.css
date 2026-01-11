@@ -22,23 +22,26 @@ body {
 	background-color: #fff;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+	height: 100%;
+	margin: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    padding-top: 56px; /* altura del navbar */
+	display: flex;
+	flex-direction: column;
+	padding-top: 56px;
+	/* altura del navbar */
 }
 
 .contenido {
-    flex: 1; /* empuja el footer hacia abajo */
+	flex: 1;
+	/* empuja el footer hacia abajo */
 }
 
 .footer {
-    margin-top: auto;
+	margin-top: auto;
 }
 
 h1,
@@ -129,14 +132,17 @@ BANNER / OWL
 		max-width: none;
 		padding: .75rem;
 	}
+
 	.banner-caption h2 {
 		font-size: 1rem;
 		line-height: 1.2;
 	}
+
 	.banner-caption p {
 		font-size: .8rem;
 		line-height: 1.3;
 	}
+
 	.banner-item img {
 		height: 260px;
 		object-fit: cover;
@@ -832,4 +838,190 @@ BOTONES
 .btn-outline-fucsia:hover {
 	background-color: var(--color-fucsia);
 	color: #fff;
+}
+
+/* =========================================================
+LISTA DE SERVICIOS
+========================================================= */
+
+.lista-servicios {
+	max-width: 1100px;
+	margin: auto;
+	background: #fff;
+}
+
+.item-servicio {
+	display: grid;
+	grid-template-columns: 180px 1fr auto;
+	gap: 1.5rem;
+	padding: 1.5rem 1rem;
+	border-bottom: 2px solid #ff6a00;
+	align-items: center;
+}
+
+.item-servicio img {
+	width: 160px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.contenido h4 {
+	color: #1e6bd6;
+	margin-bottom: .5rem;
+}
+
+.contenido ul {
+	padding-left: 1.2rem;
+	color: #777;
+	margin: 0;
+}
+
+.tarifa {
+	color: #1e6bd6;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.tarifa span {
+	color: #ff6a00;
+}
+
+.nota {
+	color: #777;
+	font-size: .9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.item-servicio {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.item-servicio img {
+		margin: auto;
+	}
+
+	.tarifa {
+		margin-top: .5rem;
+	}
+}
+
+.servicios {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.servicio {
+	display: flex;
+	gap: 1rem;
+	padding: 1rem 0;
+	border-bottom: 2px solid #ff6a00;
+}
+
+.servicio img {
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.info {
+	flex: 1;
+}
+
+.info h3 {
+	color: #1e6bd6;
+	margin-bottom: .5rem;
+}
+
+.info ul {
+	padding-left: 1.2rem;
+	color: #666;
+}
+
+.precio {
+	font-weight: bold;
+	color: #1e6bd6;
+	white-space: nowrap;
+}
+
+.precio span {
+	color: #ff6a00;
+}
+
+.nota {
+	color: #777;
+	font-size: .9rem;
+}
+
+.info-general {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.info-general h3 {
+	color: #1e6bd6;
+	margin-top: 1.5rem;
+}
+
+/* =========================================================
+ESTRUCTURA ORGANIZACIONAL
+========================================================= */
+
+.estructura-organizacional {
+	max-width: 1100px;
+}
+
+.titulo-seccion {
+	color: #1e6bd6;
+	font-weight: 700;
+}
+
+.bloque-organigrama {
+	background: #f9f9f9;
+	padding: 2rem 1rem;
+	border-radius: 6px;
+}
+
+.card-estructura {
+	height: 100%;
+	border: 1px solid #e5e5e5;
+	border-left: 5px solid #ff6a00;
+	padding: 1.5rem;
+	border-radius: 6px;
+	background: #fff;
+}
+
+.card-estructura h4 {
+	color: #1e6bd6;
+	margin-bottom: 1rem;
+}
+
+.card-estructura ul {
+	padding-left: 1.2rem;
+	margin: 0;
+	color: #555;
+}
+
+.bloque-talento h3,
+.bloque-capacitacion h3 {
+	color: #1e6bd6;
+	margin-bottom: 1rem;
+}
+
+.bloque-talento ul,
+.bloque-capacitacion ul {
+	padding-left: 1.2rem;
+	color: #555;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+	.titulo-seccion {
+		font-size: 1.5rem;
+	}
+
+	.card-estructura {
+		padding: 1.2rem;
+	}
 }

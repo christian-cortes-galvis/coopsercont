@@ -29,9 +29,6 @@
 	<main class="contenido py-5">
 		@yield('content')
 	</main>
-	<a href="https://wa.me/573000000000" class="btn-wsp" target="_blank" aria-label="Chatear por WhatsApp">
-		<i class="fab fa-whatsapp"></i>
-	</a>
 	@include('layouts.footer')
 	<!-- JQUERY 3.7.1 -->
 	<script src="{{ asset('vendor/jquery/dist/js/jquery.js') }}"></script>

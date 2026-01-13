@@ -6,12 +6,7 @@
 	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">Peticiones, Quejas, Reclamos o Solicitudes <i class="fas fa-file-alt"></i></h2>
 
-		{{-- Mensaje general --}}
-		@if ($errors->any())
-			<div class="alert alert-danger">
-				<strong>Corrige los errores indicados.</strong>
-			</div>
-		@endif
+		<x-alertas/>
 
 		<form method="POST" action="{{ route('crearPQRS') }}" enctype="multipart/form-data" novalidate>
 			@csrf
@@ -97,8 +92,7 @@
 				{{-- Foto --}}
 				<div class="col-12">
 					<label class="form-label fw-bold text-azul">Foto (Opcional) <i class="fas fa-camera"></i></label>
-					<input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror"
-						accept="image/jpeg,image/png,image/webp">
+					<input type="file" name="foto" class="form-control @error('foto') is-invalid @enderror" accept="image/jpeg,image/png,image/webp">
 					@error('foto')
 						<div class="invalid-feedback">{{ $message }}</div>
 					@enderror

@@ -13,24 +13,24 @@ class PqrsController extends Controller
 	{
 		$data = $request->validate([
 			'nombre'      => 'required|string|max:255',
-			'documento'   => 'required|string|max:50',
+			'documento'   => 'required|numeric',
 			'direccion'   => 'required|string|max:255',
-			'telefono'    => 'required|string|max:50',
-			'email'       => 'nullable|email',
+			'telefono'    => 'required|numeric',
+			'email'       => 'required|email',
 			'tipo'        => 'required|string|max:100',
 			'descripcion' => 'required|string',
 			'foto'        => 'nullable|image|max:1024',
 		]);
 
 		if ($request->hasFile('foto')) {
-			$data['foto'] = $request->file('foto')->store('pqrses', 'public');
+			$data['foto'] = $request->file('foto')->store('pqrs', 'public');
 		}
 
 		Pqrs::create($data);
 
 		// ENVIAR CORREO
-		Mail::to('coopsercont@contadero-narino.gov.co')->send(new PqrsCreatedMail($data));
+		Mail::to(env('MAIL_PQRS'))->send(new PqrsCreatedMail($data));
 
-		return back()->with('success', 'PQRS enviada correctamente.');
+		return back()->with('primary', 'PQRS enviada correctamente.');
 	}
 }

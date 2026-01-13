@@ -18,7 +18,7 @@ class PqrsCreatedMail extends Mailable
 
 	public function build()
 	{
-		$mail = $this->subject('Nuevo pqrs ciudadano recibido')->view('emails.pqrs-creada');
+		$mail = $this->subject('Nueva PQRS')->view('emails.pqrs-creada');
 		// Adjuntar foto si existe
 		if (!empty($this->pqrs['foto'])) {
 			$mail->attach( storage_path('app/public/' . $this->pqrs['foto']) );

@@ -8,12 +8,7 @@
 	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">Formulario de Reporte <i class="fas fa-file-alt"></i></h2>
 
-		{{-- Mensaje general --}}
-		@if ($errors->any())
-			<div class="alert alert-danger">
-				<strong>Corrige los errores indicados.</strong>
-			</div>
-		@endif
+		<x-alertas/>
 
 		<form method="POST" action="{{ route('crearReporte') }}" enctype="multipart/form-data" novalidate>
 			@csrf

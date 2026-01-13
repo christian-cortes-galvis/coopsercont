@@ -13,9 +13,9 @@ class ReporteController extends Controller
 	{
 		$data = $request->validate([
 			'nombre'          => 'required|string|max:255',
-			'documento'       => 'required|string|max:50',
+			'documento'       => 'required|numeric',
 			'direccion'       => 'required|string|max:255',
-			'telefono'        => 'required|string|max:50',
+			'telefono'        => 'required|numeric',
 			'email'           => 'nullable|email',
 			'tipo_incidencia' => 'required|string|max:100',
 			'descripcion'     => 'required|string',
@@ -29,8 +29,8 @@ class ReporteController extends Controller
 		Report::create($data);
 
 		// ENVIAR CORREO
-		Mail::to('notificaciones@coopsercont.com.co')->send(new ReportCreatedMail($data));
+		Mail::to(env('MAIL_REPORTES'))->send(new ReportCreatedMail($data));
 
-		return back()->with('success', 'Reporte enviado correctamente.');
+		return back()->with('primary', 'Reporte enviado correctamente.');
 	}
 }

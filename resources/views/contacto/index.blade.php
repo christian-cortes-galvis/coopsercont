@@ -1,10 +1,10 @@
 @extends('layouts.app')
-@section('title', 'Atención al Ciudadano')
+@section('title', 'CAU')
 @section('meta_description', 'Canales oficiales de atención, contacto y servicios a la ciudadanía de COOPSERCONT en El Contadero.')
 @section('content')
 	<div class="container seccion-detalle mt-4">
 		<h2 class="fw-bold mb-3 text-center text-azul">
-			ATENCIÓN AL CIUDADANO
+			CENTRO DE ATENCIÓN AL USUARIO (CAU)
 		</h2>
 		<p class="text-center text-muted mb-5">
 			Canales oficiales de atención, contacto y servicios a la ciudadanía

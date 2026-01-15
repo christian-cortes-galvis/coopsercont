@@ -4,7 +4,9 @@
 	COOPSERCONT en El Contadero.')
 @section('content')
 	<div class="container seccion-detalle mt-4">
-		<h2 class="fw-bold mb-3 text-center text-azul">Normatividad</h2>
+		<h2 class="fw-bold mb-3 text-center text-azul">
+			NORMATIVIDAD
+		</h2>
 		<ul class="list-group list-group-flush">
 			<li class="list-group-item">
 				<strong>Ley 142 de 1994</strong><br>

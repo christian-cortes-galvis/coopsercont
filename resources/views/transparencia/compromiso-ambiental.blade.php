@@ -3,7 +3,7 @@
 @section('meta_description', 'Compromiso ambiental de COOPSERCONT con la gestión responsable del agua y los residuos sólidos.')
 @section('content')
 	<div class="container seccion-detalle mt-4">
-		<h2 class="fw-bold text-center mb-4">
+		<h2 class="fw-bold mb-3 text-center text-azul">
 			COMPROMISO AMBIENTAL
 		</h2>
 		<div class="my-4 text-center">

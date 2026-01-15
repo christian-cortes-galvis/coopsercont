@@ -36,6 +36,32 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<h5>Compromiso Ambiental</h5>
+						<p>
+							Acciones y políticas para la protección del medio ambiente.
+						</p>
+						<a href="{{ url('/transparencia/compromiso-ambiental') }}" class="btn btn-sm btn-outline-primary">
+							Ver compromiso ambiental
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<h5>Estructura Organizacional</h5>
+						<p>
+							Información sobre la estructura organizacional de COOPSERCONT.
+						</p>
+						<a href="{{ url('/transparencia/estructura-organizacional') }}" class="btn btn-sm btn-outline-primary">
+							Ver estructura organizacional
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 @endsection

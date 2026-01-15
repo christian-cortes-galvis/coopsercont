@@ -37,12 +37,12 @@
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item text-azul" href="{{ url('/compromiso-ambiental') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/compromiso-ambiental') }}">
 									Compromiso Ambiental
 								</a>
 							</li>
 							<li>
-								<a class="dropdown-item text-azul" href="{{ url('/estructura-organizacional') }}">
+								<a class="dropdown-item text-azul" href="{{ url('/transparencia/estructura-organizacional') }}">
 									Estructura Organizacional
 								</a>
 							</li>

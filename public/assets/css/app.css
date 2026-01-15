@@ -295,7 +295,7 @@ TEXTOS UTILITARIOS
 	color: var(--color-azul);
 }
 
-.text-naranja {
+.text-amarillo {
 	color: var(--color-amarillo);
 }
 
@@ -1025,3 +1025,26 @@ ESTRUCTURA ORGANIZACIONAL
 		padding: 1.2rem;
 	}
 }
+
+.card-icon-text .card-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 96px;              /* 👈 CLAVE */
+}
+
+.card-icon-text .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-azul, #0d3b8e);
+    flex-shrink: 0;
+}
+
+.card-icon-text .text-wrapper {
+    line-height: 1.3;
+}
+

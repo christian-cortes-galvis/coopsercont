@@ -17,17 +17,14 @@ Route::get('/contacto', fn () => view('contacto.index'))->name('contacto');
 
 Route::get('/noticias', [NewsController::class, 'index'])->name('noticias.index');
 Route::get('/noticias/{news}', [NewsController::class, 'show'])->name('noticias.show');
-
-Route::get('/compromiso-ambiental', fn () => view('institucional.compromiso-ambiental'))->name('compromiso.ambiental');
-
-Route::get('/estructura-organizacional', fn () => view('institucional.estructura-organizacional'))->name('estructura.organizacional');
-
 Route::get('/buscar', [SearchController::class, 'index'])->name('buscar');
 
 Route::prefix('transparencia')->group(function () {
 	Route::get('/', fn () => view('transparencia.index'))->name('transparencia.index');
 	Route::get('/tramites', fn () => view('transparencia.tramites'));
 	Route::get('/normatividad', fn () => view('transparencia.normatividad'));
+	Route::get('/compromiso-ambiental', fn () => view('transparencia.compromiso-ambiental'))->name('transparencia.compromiso.ambiental');
+	Route::get('/estructura-organizacional', fn () => view('transparencia.estructura-organizacional'))->name('transparencia.estructura.organizacional');
 });
 
 Route::get('/clearCache', function () {

@@ -2,6 +2,9 @@
 @section('title', 'Trámites | Transparencia')
 @section('content')
 	<div class="lista-servicios mt-4">
+		<h2 class="fw-bold mb-3 text-center text-azul">
+			TRÁMITES Y SERVICIOS
+		</h2>
 		<img src="{{ asset('institucional/sede1.png') }}" class="img-fluid rounded border img-sede"
 			alt="Sede de la oficina central COOPSERCONT">
 		<img src="{{ asset('institucional/sede2.png') }}" class="img-fluid rounded border img-sede"

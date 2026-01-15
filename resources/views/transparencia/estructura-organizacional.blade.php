@@ -2,9 +2,9 @@
 @section('title', 'Estructura Orgánica y Talento Humano | COOPSERCONT')
 @section('meta_description', 'Estructura orgánica y talento humano de COOPSERCONT.')
 @section('content')
-	<div class="estructura-organizacional container my-5">
-		<h2 class="titulo-seccion text-center mb-4">
-			Estructura Organizacional y Talento Humano
+	<div class="container seccion-detalle mt-4">
+		<h2 class="fw-bold mb-3 text-center text-azul">
+			ESTRUCTURA ORGANIZACIONAL Y TALENTO HUMANO
 		</h2>
 		{{-- Organigrama --}}
 		<section class="bloque-organigrama mb-5 text-center">

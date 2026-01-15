@@ -15,7 +15,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32"/>
 	<!-- APP CSS -->
-	<link href="{{ asset('assets/css/app.css') }}?6" rel="stylesheet">
+	<link href="{{ asset('assets/css/app.css') }}?9" rel="stylesheet">
 	<!-- OWL CAROUSEL 2.3.4-->
 	<link rel="stylesheet" href="{{ asset('vendor/owl-carousel/dist/css/owl.carousel.css') }}">
 	<link rel="stylesheet" href="{{ asset('vendor/owl-carousel/dist/css/owl.theme.default.css') }}">

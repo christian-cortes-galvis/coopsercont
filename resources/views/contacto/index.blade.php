@@ -27,7 +27,14 @@
 						</p>
 						<p class="mb-2">
 							<strong>Teléfonos:</strong><br>
-							316 188 3794 · 315 384 3906
+							<strong class="text-azul">Gerencia:</strong><br>
+							3153843906
+							<br><strong class="text-azul">Secretaria:</strong><br>
+							3161883794
+							<br><strong class="text-azul">Operario de planta:</strong><br>
+							3026805882
+							<br><strong class="text-azul">Fontanero:</strong><br>
+							3161885034
 						</p>
 						<p class="mb-2">
 							<strong>Correo electrónico:</strong><br>

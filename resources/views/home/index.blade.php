@@ -24,6 +24,33 @@
 						</div>
 					</div>
 				</div>
+				<div class="item">
+					<div class="banner-item">
+						<img src="{{ asset('assets/banner/3.jpeg') }}" class="img-fluid" alt="">
+						<div class="banner-caption">
+							<h2 class="text-amarillo">Gestión responsable de residuos.</h2>
+							<p class="text-light">Compromiso diario con la limpieza, el ambiente y la calidad de vida.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="banner-item">
+						<img src="{{ asset('assets/banner/4.png') }}" class="img-fluid" alt="">
+						<div class="banner-caption">
+							<h2 class="text-amarillo">Servicio de aseo eficiente.</h2>
+							<p class="text-light">Acciones que protegen la salud pública y el bienestar de la comunidad.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="banner-item">
+						<img src="{{ asset('assets/banner/5.png') }}" class="img-fluid" alt="">
+						<div class="banner-caption">
+							<h2 class="text-amarillo">Trabajo eficiente.</h2>
+							<p class="text-light">Compromiso diario con la mejora continua y el bienestar ciudadano.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		{{-- HERO --}}

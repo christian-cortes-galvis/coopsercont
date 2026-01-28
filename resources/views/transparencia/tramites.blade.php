@@ -10,7 +10,7 @@
 		<img src="{{ asset('institucional/sede2.png') }}" class="img-fluid rounded border img-sede"
 			alt="Sede de la oficina central COOPSERCONT">
 		<div class="item-servicio">
-			<img src="{{ asset('institucional/solicitud_acueducto.png') }}" alt="Acueducto">
+			<img src="{{ asset('institucional/solicitud_acueducto.jpg') }}" alt="Acueducto">
 			<div class="contenido">
 				<h4>Acueducto</h4>
 				<ul>
@@ -23,7 +23,7 @@
 			<div class="tarifa">Tarifa: <span>$150.000</span></div>
 		</div>
 		<div class="item-servicio">
-			<img src="{{ asset('institucional/solicitud_alcantarillado.png') }}" alt="Alcantarillado">
+			<img src="{{ asset('institucional/solicitud_alcantarillado.jpg') }}" alt="Alcantarillado">
 			<div class="contenido">
 				<h4>Alcantarillado</h4>
 				<ul>
@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="item-servicio">
-			<img src="{{ asset('institucional/cambio_usuario.png') }}" alt="Cambio de usuario">
+			<img src="{{ asset('institucional/cambio_usuario.jpeg') }}" alt="Cambio de usuario">
 			<div class="contenido">
 				<h4>Cambio de usuario</h4>
 				<ul>
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="item-servicio">
-			<img src="{{ asset('institucional/reposicion_facturas.png') }}" alt="Reposición de facturas">
+			<img src="{{ asset('institucional/factura.png') }}" alt="Reposición de facturas">
 			<div class="contenido">
 				<h4>Reposición de facturas</h4>
 				<p class="nota">
